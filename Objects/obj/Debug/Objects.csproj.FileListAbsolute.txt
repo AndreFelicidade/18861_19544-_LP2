@@ -1,0 +1,4 @@
+D:\IPCA\LP II\TP1LP2\TP1LP2\obj\Debug\Objects.csprojAssemblyReference.cache
+D:\IPCA\LP II\TP1LP2\TP1LP2\obj\Debug\Objects.csproj.CoreCompileInputs.cache
+D:\IPCA\LP II\TP1LP2\Objects\obj\Debug\Objects.csprojAssemblyReference.cache
+D:\IPCA\LP II\TP1LP2\Objects\obj\Debug\Objects.csproj.CoreCompileInputs.cache

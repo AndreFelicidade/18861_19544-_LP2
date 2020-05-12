@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Objects.Utente" Collapsed="true">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAEAIIBAAAAAQAAAEAAAAAAQAAAAEAAIAAAACAABACA=</HashCode>
+      <FileName>Utente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects.Urgencia" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Urgencia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects.Triagem" Collapsed="true">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAAAIhAAAAAQAAAAAAAAAAQAAAAEAAAAAQAAAAEAAA=</HashCode>
+      <FileName>Triagem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects.ProcessoClinico" Collapsed="true">
+    <Position X="5.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAEAAAABAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>ProcessoClinico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects.Pessoa" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQCABAAAgAQAAAoEAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects.Medico" Collapsed="true">
+    <Position X="5.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAACAAAIAAAACAAAAAA=</HashCode>
+      <FileName>Medico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects.Hospital" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAQAQAAEAEA=</HashCode>
+      <FileName>Hospital.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects.Enfermeiro" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIQAAACEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enfermeiro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Objects.ConsultaMedica" Collapsed="true">
+    <Position X="3.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAIABAQAAAAABAAAAAQAAAQAAAAAAAIAAAACAAACAA=</HashCode>
+      <FileName>ConsultaMedica.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
