@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace DataManagement
+namespace Objects
 {
     /// <summary>
     /// class that manages a waiting room before patients are evaluated

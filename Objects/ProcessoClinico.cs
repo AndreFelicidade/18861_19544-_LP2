@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 ///<version>0.1</version>
 ///<author>Andre</author>
 
-namespace Object
+namespace Objects
 {
     public class ProcessoClinico
     {
@@ -18,7 +18,7 @@ namespace Object
         /// <summary>
         /// Initializing attributes
         /// </summary>
-        public Triagem triage;
+        public Triagem triage;//consulta medica tambem tem triagem?
         public ConsultaMedica doctorAppointment;
         
 
@@ -33,7 +33,7 @@ namespace Object
         /// </summary>
         /// <param name="tr"></param>
         /// <param name="da"></param>
-        public ProcessoClinico(int tr, string da)
+        public ProcessoClinico(Triagem tr, ConsultaMedica da)
         {
             triage = tr;
             doctorAppointment = da;
@@ -48,7 +48,7 @@ namespace Object
         /// <summary>
         /// Gets triage stats 
         /// </summary>
-        public int Triage
+        public Triagem Triage
         {
             get { return triage; }
             set { triage = value; }
@@ -57,7 +57,7 @@ namespace Object
         /// <summary>
         /// something something doctor appointment
         /// </summary>
-        public string DoctorAppointment
+        public ConsultaMedica DoctorAppointment
         {
             get { return doctorAppointment; }
             set { doctorAppointment = value; }

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Object;
-using DataManagement;
+using Objects;
+using Objects;
 
 
 ///<copyright file = "Utente.cs"	company = "IPCA">
@@ -14,7 +14,7 @@ using DataManagement;
 ///<author>Andre</author>
 ///<summary>This class is for the object Utente, which does X and Y</summary>
 
-namespace DataManagement
+namespace Objects
 {
     public class Utente : Pessoa
     {
@@ -24,7 +24,7 @@ namespace DataManagement
         /// </summary>
         public int patientNumber;               
         public bool active;
-        public ProcessoClinico processoClinico;
+        public ProcessoClinico clinicalProcess;
 
         #endregion
 
@@ -51,7 +51,7 @@ namespace DataManagement
         {
             patientNumber = pn;           
             active = ac;
-            processoClinico = pc;
+            clinicalProcess = pc;
         }
         #endregion
 
@@ -68,7 +68,7 @@ namespace DataManagement
         }
         #endregion
 
-       
+
 
 
 
@@ -86,56 +86,13 @@ namespace DataManagement
         /// <summary>
         /// Gets Clinical case for an Utente
         /// </summary>
-        public string ClinicalCase
+        public ProcessoClinico ClinicalProcess
         {
-            get { return clinicalCase; }
-            set { clinicalCase = value; }
+            get { return clinicalProcess; }
+            set { clinicalProcess = value; }
         }
 
-        /// <summary>
-        /// Gets doctor code for an Utente
-        /// </summary>
-        public Medico Doctor
-        {
-            get { return doctor; }
-            set { doctor = value; }
-        }
-
-        /// <summary>
-        /// Gets nurse code for an Utente
-        /// </summary>
-        public int NurseCode
-        {
-            get { return nurseCode; }
-            set { nurseCode = value; }
-        }
-
-        /// <summary>
-        /// Gets triage state for an Utente
-        /// </summary>
-        public bool TriageState
-        {
-            get { return triageState; }
-            set
-            {
-                if (value == true || value == false)
-                    triageState = value;
-            }
-        }
-
-        /// <summary>
-        /// Gets triage state for an Utente
-        /// </summary>
-        public bool SeenByDoctor
-        {
-            get { return seenByDoctor; }
-            set
-            {
-                if (value == true || value == false)
-                    seenByDoctor = value;
-            }
-        }
-
+        
         /// <summary>
         /// If true, utente is currently not discharged.
         /// </summary>

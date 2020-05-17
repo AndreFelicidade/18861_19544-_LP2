@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultaMedica.cs" />
     <Compile Include="Enfermeiro.cs" />
     <Compile Include="Hospital.cs" />
     <Compile Include="Medico.cs" />

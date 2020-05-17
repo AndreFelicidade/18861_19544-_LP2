@@ -1,4 +1,4 @@
-﻿using DataManagement.CustomExceptions;
+﻿using Objects.CustomExceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Linq;
 ///<version>0.1</version>
 ///<author>Andre</author>
 
-namespace DataManagement
+namespace Objects
 {
     public class Utentes
     {
@@ -19,6 +19,25 @@ namespace DataManagement
         public static List<Utente> utentes = new List<Utente>();
 
         #region Methods
+        /// <summary>
+        /// find for IdUtente
+        /// </summary>
+      
+        public Utente FindUtenteID(int patientNumber)
+        {
+            return utentes.Find(u => u.patientNumber == patientNumber);
+
+        }
+        /// <summary>
+        /// find for name and nhsnumber
+        /// </summary>
+        
+        public Utente FindUtenteName(int nhsNumber, string name)
+        {
+            return utentes.Find(u => u.name == name && u.nhsNumber == nhsNumber);
+
+        }
+
 
         /// <summary>
         /// Adding an utente to the list
@@ -65,14 +84,16 @@ namespace DataManagement
                 return ut;
             }
             return ut;
-    }
+        }
+
+
 
 
         /// <summary>
         /// Orders utentes by urgency level
         /// </summary>
         /// <returns></returns>
-        public static bool OrderByUrgencyLevel()
+        public static bool OrderByNhsNumber()
         {
             try
             {

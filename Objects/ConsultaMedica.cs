@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 ///<version>0.1</version>
 ///<author>Andre</author>
 
-namespace DataManagement
+namespace Objects
 {
     /// <summary>
     /// Gets all information from triagem, doctor code that saw the patient, diagnosis, medication, tests
     /// </summary>
-    class ConsultaMedica
+    public class ConsultaMedica
     {
         #region State Of Class
         /// <summary>

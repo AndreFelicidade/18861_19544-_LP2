@@ -4,8 +4,8 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
-using DataManagement;
-using DataManagement.CustomExceptions;
+using Objects;
+using Objects.CustomExceptions;
 
 ///<copyright file = "Enfermeiros.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -13,7 +13,7 @@ using DataManagement.CustomExceptions;
 ///<version>0.1</version>
 ///<author>Andre</author>
 
-namespace DataManagement
+namespace Objects
 {
     public class Enfermeiros
     {

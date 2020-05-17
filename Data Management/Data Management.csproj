@@ -52,7 +52,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsultaMedica.cs" />
     <Compile Include="CustomExceptions\EnfermeirosListNotFoundException.cs" />
     <Compile Include="CustomExceptions\MedicosListNotFoundException.cs" />
     <Compile Include="CustomExceptions\UtentesListNotFoundException.cs" />

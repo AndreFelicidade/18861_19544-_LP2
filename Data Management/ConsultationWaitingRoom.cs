@@ -7,7 +7,7 @@ using System.Collections.Generic;
 ///<date>21-02-2020</date>
 ///<version>0.1</version>
 ///<author>Andre</author>
-namespace DataManagement
+namespace Objects
 {
     /// <summary>
     /// This class manages utentes that arrive on Triagem
