@@ -10,17 +10,17 @@ using System.Threading.Tasks;
 ///<version>0.1</version>
 ///<author>Andre</author>
 
-namespace DataManagement
+namespace Objects
 {
-    class ProcessoClinico
+    public class ProcessoClinico
     {
         #region State Of Class
         /// <summary>
         /// Initializing attributes
         /// </summary>
+        public Triagem triage;//consulta medica tambem tem triagem?
+        public ConsultaMedica doctorAppointment;
         
-        public int triage;
-        public string doctorAppointment;
 
         #endregion
 
@@ -33,7 +33,7 @@ namespace DataManagement
         /// </summary>
         /// <param name="tr"></param>
         /// <param name="da"></param>
-        public ProcessoClinico(int tr, string da)
+        public ProcessoClinico(Triagem tr, ConsultaMedica da)
         {
             triage = tr;
             doctorAppointment = da;
@@ -48,7 +48,7 @@ namespace DataManagement
         /// <summary>
         /// Gets triage stats 
         /// </summary>
-        public int Triage
+        public Triagem Triage
         {
             get { return triage; }
             set { triage = value; }
@@ -57,7 +57,7 @@ namespace DataManagement
         /// <summary>
         /// something something doctor appointment
         /// </summary>
-        public string DoctorAppointment
+        public ConsultaMedica DoctorAppointment
         {
             get { return doctorAppointment; }
             set { doctorAppointment = value; }

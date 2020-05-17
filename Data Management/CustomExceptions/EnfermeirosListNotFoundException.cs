@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataManagement.CustomExceptions
+namespace Objects.CustomExceptions
 {
     /// <summary>
     /// Class that handles customs exceptions for list of Enfermeiro

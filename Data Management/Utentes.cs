@@ -1,4 +1,4 @@
-﻿using DataManagement.CustomExceptions;
+﻿using Objects.CustomExceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Linq;
 ///<version>0.1</version>
 ///<author>Andre</author>
 
-namespace DataManagement
+namespace Objects
 {
     public class Utentes
     {
@@ -89,6 +89,27 @@ namespace DataManagement
 
 
 
+        /// <summary>
+        /// Orders utentes by urgency level
+        /// </summary>
+        /// <returns></returns>
+        public static bool OrderByNhsNumber()
+        {
+            try
+            {
+                if (utentes == null)
+                {
+                    throw new UtentesListNotFoundException();
+                }
+                utentes = utentes.OrderBy(x => x.nhsNumber).ToList();
+                return true;
+            }
+            catch (Exception e)
+            {
+                //MessageBox.Show(e.Message);
+                return false;
+            }
+        }
         #endregion
 
     }

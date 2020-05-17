@@ -58,10 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultaMedica.cs" />
     <Compile Include="Enfermeiro.cs" />
     <Compile Include="Hospital.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Pessoa.cs" />
+    <Compile Include="ProcessoClinico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Triagem.cs" />
     <Compile Include="Utente.cs" />

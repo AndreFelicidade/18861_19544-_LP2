@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 ///<version>0.1</version>
 ///<author>Andre</author>
 
-namespace DataManagement
+namespace Objects
 {
     public class Pessoa
     {

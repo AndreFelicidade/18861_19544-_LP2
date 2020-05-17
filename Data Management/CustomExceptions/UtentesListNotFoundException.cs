@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataManagement.CustomExceptions
+namespace Objects.CustomExceptions
 {
     /// <summary>
     /// Class that handles customs exceptions for list of Utente

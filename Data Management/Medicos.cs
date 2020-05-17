@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DataManagement;
+using Objects;
 
 ///<copyright file = "Medicos.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -11,7 +11,7 @@ using DataManagement;
 ///<version>0.1</version>
 ///<author>Andre</author>
 
-namespace DataManagement
+namespace Objects
 {
     class Medicos
     {
