@@ -1,1 +1,2 @@
 D:\IPCA\LP II\TP1LP2\Data Management\obj\Debug\Data Management.csproj.CoreCompileInputs.cache
+C:\Users\ritaf\Source\Repos\AndreFelicidade\18861_19544-_LP2\Data Management\obj\Debug\Data Management.csprojAssemblyReference.cache

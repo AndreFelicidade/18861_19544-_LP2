@@ -23,19 +23,9 @@ namespace DataManagement
 
         #endregion
 
-
-
         #region Behavior
 
         #region Builder
-
-        /// <summary>
-        /// Builder by omission
-        /// </summary>
-        public ProcessoClinico()
-        {
-
-        }
 
         /// <summary>
         /// Builder for processo clinico

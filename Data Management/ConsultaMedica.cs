@@ -21,12 +21,12 @@ namespace DataManagement
         /// <summary>
         /// Initializing attributes
         /// </summary>
-        protected Triagem triageInfo;
-        protected int doctorCode;
+        protected Triagem triage;
+        protected Medico doctor;
         protected string diagnosis;
         protected string medication;
         protected string tests;
-
+        protected DateTime time;
         #endregion
 
 
@@ -52,13 +52,14 @@ namespace DataManagement
         /// <param name="diag"></param>
         /// <param name="medi"></param>
         /// <param name="te"></param>
-        public ConsultaMedica(Triagem ti, int dc, string diag, string medi, string te)
+        public ConsultaMedica(Triagem ti, Medico dc, string diag, string medi, string te, DateTime t)
         {
-            triageInfo = ti;
-            doctorCode = dc;
+            triage = ti;
+            doctor = dc;
             diagnosis = diag;
             medication = medi;
             tests = te;
+            time = t;
         }
         #endregion
 
@@ -72,17 +73,23 @@ namespace DataManagement
         /// </summary>
         public Triagem TriageInfo
         {
-            get { return triageInfo; }
-            set { triageInfo = value; }
+            get { return triage; }
+            set { triage = value; }
+        }
+
+        public DateTime Time
+        {
+            get { return time; }
+            set { time = value; }
         }
 
         /// <summary>
         /// Gets doctor code for consulta
         /// </summary>
-        public int DoctorCode
+        public Medico Doctor
         {
-            get { return doctorCode; }
-            set { doctorCode = value; }
+            get { return doctor; }
+            set { doctor = value; }
         }
 
         /// <summary>
