@@ -18,6 +18,7 @@ namespace DataManagement
         /// <summary>
         /// Initializing attributes
         /// </summary>
+        
         public int triage;
         public string doctorAppointment;
 

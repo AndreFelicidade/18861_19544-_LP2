@@ -19,6 +19,25 @@ namespace DataManagement
         public static List<Utente> utentes = new List<Utente>();
 
         #region Methods
+        /// <summary>
+        /// find for IdUtente
+        /// </summary>
+      
+        public Utente FindUtenteID(int patientNumber)
+        {
+            return utentes.Find(u => u.patientNumber == patientNumber);
+
+        }
+        /// <summary>
+        /// find for name and nhsnumber
+        /// </summary>
+        
+        public Utente FindUtenteName(int nhsNumber, string name)
+        {
+            return utentes.Find(u => u.name == name && u.nhsNumber == nhsNumber);
+
+        }
+
 
         /// <summary>
         /// Adding an utente to the list
@@ -65,30 +84,11 @@ namespace DataManagement
                 return ut;
             }
             return ut;
-    }
-
-
-        /// <summary>
-        /// Orders utentes by urgency level
-        /// </summary>
-        /// <returns></returns>
-        public static bool OrderByUrgencyLevel()
-        {
-            try
-            {
-                if (utentes == null)
-                {
-                    throw new UtentesListNotFoundException();
-                }
-                utentes = utentes.OrderBy(x => x.levelOfUrgency).ToList();
-                return true;
-            }
-            catch (Exception e)
-            {
-                //MessageBox.Show(e.Message);
-                return false;
-            }
         }
+
+
+
+
         #endregion
 
     }

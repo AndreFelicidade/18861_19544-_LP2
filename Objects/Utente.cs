@@ -22,10 +22,6 @@ namespace DataManagement
         /// </summary>
         public int patientNumber;
         public string clinicalCase;
-        public Medico doctor; // Doctor seeing the patient
-        public int nurseCode;
-        public bool triageState;
-        public bool seenByDoctor;
         public bool active;
 
         #endregion
@@ -76,7 +72,7 @@ namespace DataManagement
         }
         #endregion
 
-       
+
 
 
 
