@@ -20,6 +20,10 @@ namespace Control
     {
         private CustomComparer comparer = new CustomComparer();
 
+        /// <summary>
+        /// Compares a new nurse to nurses already registered
+        /// </summary>
+        /// <param name="enf"></param>
         public void ValidateNurse(Enfermeiro enf)
         {
             if(Enfermeiros.enfermeiros.Any(y => comparer.Compare(y,enf) == -1))
@@ -28,8 +32,22 @@ namespace Control
             }
         }
 
-        
+        /// <summary>
+        /// returns list of all nurses
+        /// </summary>
+        /// <returns></returns>
+        public List<Enfermeiro> SeeRegisteredNurses()
+        {
+            return Enfermeiros.enfermeiros;
+        }
 
+        public Enfermeiro EditingNurse(Enfermeiro enf, DateTime birthDate, int nhsNumber, string name,
+            string gender, string address, int nurseCode, string specialty, bool avaliable)
+        {
+            Enfermeiros.EditNurse(enf, birthDate, nhsNumber, name,
+                gender, address, nurseCode, specialty, avaliable);
+            return enf;
+        }
         
     }
 }

@@ -1,11 +1,7 @@
-﻿using System;
+﻿using Objects.CustomExceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using Objects;
-using Objects.CustomExceptions;
 
 ///<copyright file = "Enfermeiros.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -53,7 +49,7 @@ namespace Objects
             }
         }
 
-        
+
         /// <summary>
         /// Orders Enfermeiros by specialty
         /// </summary>
@@ -84,6 +80,31 @@ namespace Objects
         {
 
             return enfermeiros.Where(enfermeiro => enfermeiro.avaliable).ToList();
+        }
+
+        /// <summary>
+        /// Allows editing of the data of a nurse
+        /// </summary>
+        /// <param name="enf"></param>
+        /// <param name="birthDate"></param>
+        /// <param name="nhsNumber"></param>
+        /// <param name="name"></param>
+        /// <param name="gender"></param>
+        /// <param name="address"></param>
+        /// <param name="nurseCode"></param>
+        /// <param name="specialty"></param>
+        /// <param name="avaliable"></param>
+        public static void EditNurse(Enfermeiro enf, DateTime birthDate, int nhsNumber, string name,
+            string gender, string address, int nurseCode, string specialty, bool avaliable)
+        {
+            enf.birthDate = birthDate;
+            enf.nhsNumber = nhsNumber;
+            enf.name = name;
+            enf.gender = gender;
+            enf.address = address;
+            enf.avaliable = avaliable;
+            enf.specialty = specialty;
+            enf.nurseCode = nurseCode;
         }
 
         #endregion
