@@ -21,6 +21,14 @@ namespace DataManagement
         public Utente NextPatient()
         {
             return queue.Dequeue();
+
         }
+         
+        public List<Utente> ListUtentes()
+        {
+           return queue.ToList();
+
+        }
+
     }
 }

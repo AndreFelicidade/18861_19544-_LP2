@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 ///<copyright file = "Urgencia.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -96,6 +97,18 @@ namespace DataManagement
             }
 
             return null;
+        }
+        /// <summary>
+        /// ListWaitingRoom
+        /// </summary>
+        public List<Triagem> ListWaitingRoom()
+        {
+            List<Triagem> a = lv5Q.ToList();
+            List<Triagem> b = lv4Q.ToList();
+            List<Triagem> c = lv3Q.ToList();
+            List<Triagem> d = lv2Q.ToList();
+            List<Triagem> e = lv1Q.ToList();
+            return a.Concat(b).Concat(c).Concat(d).Concat(e).ToList();
         }
 
         #region Builders
