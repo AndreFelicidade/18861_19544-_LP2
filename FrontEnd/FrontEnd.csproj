@@ -81,10 +81,6 @@
       <Project>{a83c1dc2-f282-4427-8672-1dce81fa04bc}</Project>
       <Name>Control</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Data Management\Data Management.csproj">
-      <Project>{8001c343-f384-4e5f-a966-cd9f032ebbab}</Project>
-      <Name>Data Management</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Objects\Objects.csproj">
       <Project>{5569e721-cfb4-43a0-a0b1-5972df08f604}</Project>
       <Name>Objects</Name>

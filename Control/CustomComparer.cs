@@ -32,7 +32,7 @@ namespace Control
                 int nhs2 = ((Utente)y).nhsNumber;
                 DateTime birth1 = ((Utente)x).birthDate;
                 DateTime birth2 = ((Utente)y).birthDate;
-
+                //if utente data is the same, returns -1
                 if ( n1 == n2 && nhs1 == nhs2 && birth1 == birth2)
                 {
                     return -1;
@@ -45,8 +45,8 @@ namespace Control
                 string dspec2 = ((Medico)y).specialty;
                 int dcode1 = ((Medico)x).doctorCode;
                 int dcode2 = ((Medico)y).doctorCode;
-
-                if( dspec1 == dspec2 && dcode1 == dcode2)
+                //if doctor data is the same, returns -1
+                if ( dspec1 == dspec2 && dcode1 == dcode2)
                 {
                     return -1;
                 }
@@ -58,7 +58,7 @@ namespace Control
                 string nsp2 = ((Enfermeiro)y).specialty;
                 int ncode1 = ((Enfermeiro)x).nurseCode;
                 int ncode2 = ((Enfermeiro)y).nurseCode;
-
+                //if nurse data is the same, returns -1
                 if (nsp1 == nsp2 && ncode1 == ncode2)
                 {
                     return -1;

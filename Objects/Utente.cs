@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Object;
+using DataManagement;
 
 
 ///<copyright file = "Utente.cs"	company = "IPCA">
@@ -20,13 +22,9 @@ namespace DataManagement
         /// <summary>
         /// Initializing attributes
         /// </summary>
-        public int patientNumber;
-        public string clinicalCase;
-        public Medico doctor; // Doctor seeing the patient
-        public int nurseCode;
-        public bool triageState;
-        public bool seenByDoctor;
+        public int patientNumber;               
         public bool active;
+        public ProcessoClinico processoClinico;
 
         #endregion
 
@@ -44,22 +42,16 @@ namespace DataManagement
 
         /// <summary>
         /// Creates a new Utente, taking parameters
-        /// </summary>
-        /// <param name="lou"></param>
+        /// </summary>        
         /// <param name="pn"></param>
-        /// <param name="cc"></param>
+        /// <param name="ac"></param>
         /// <param name="dc"></param>
-        /// <param name="nc"></param>
-        /// <param name="ts"></param>
-        /// <param name="sbd"></param>
-        public Utente(int pn, string cc, Medico dc, int nc, bool ts, bool sbd)
+
+        public Utente(int pn, bool ac, ProcessoClinico pc)
         {
-            patientNumber = pn;
-            clinicalCase = cc;
-            doctor = dc;//Code of the doctor seeing to the patient
-            nurseCode = nc;
-            triageState = ts;
-            seenByDoctor = sbd;
+            patientNumber = pn;           
+            active = ac;
+            processoClinico = pc;
         }
         #endregion
 

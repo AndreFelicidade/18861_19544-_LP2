@@ -10,7 +10,7 @@ using System.Collections.Generic;
 namespace DataManagement
 {
     /// <summary>
-    /// This class manages utentes that arrive on Urgencia
+    /// This class manages utentes that arrive on Triagem
     /// </summary>
     public class ConsultationWaitingRoom
     {

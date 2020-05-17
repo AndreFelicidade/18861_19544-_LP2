@@ -80,7 +80,7 @@ namespace DataManagement
                 {
                     throw new UtentesListNotFoundException();
                 }
-                utentes = utentes.OrderBy(x => x.levelOfUrgency).ToList();
+                utentes = utentes.OrderBy(x => x.nhsNumber).ToList();
                 return true;
             }
             catch (Exception e)

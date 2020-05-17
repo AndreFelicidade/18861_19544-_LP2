@@ -10,16 +10,17 @@ using System.Threading.Tasks;
 ///<version>0.1</version>
 ///<author>Andre</author>
 
-namespace DataManagement
+namespace Object
 {
-    class ProcessoClinico
+    public class ProcessoClinico
     {
         #region State Of Class
         /// <summary>
         /// Initializing attributes
         /// </summary>
-        public int triage;
-        public string doctorAppointment;
+        public Triagem triage;
+        public ConsultaMedica doctorAppointment;
+        
 
         #endregion
 

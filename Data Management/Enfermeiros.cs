@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using DataManagement;
@@ -14,7 +15,7 @@ using DataManagement.CustomExceptions;
 
 namespace DataManagement
 {
-    class Enfermeiros
+    public class Enfermeiros
     {
 
         /// <summary>
@@ -23,7 +24,14 @@ namespace DataManagement
         public static List<Enfermeiro> enfermeiros = new List<Enfermeiro>();
 
         #region Methods
-
+        /// <summary>
+        /// returns list of nurses
+        /// </summary>
+        /// <returns></returns>
+        public static List<Enfermeiro> GetList()
+        {
+            return enfermeiros;
+        }
         /// <summary>
         /// Adding an enfermeiro to the list
         /// </summary>
@@ -45,19 +53,7 @@ namespace DataManagement
             }
         }
 
-        /// <summary>
-        /// Printing all enfermeiros
-        /// </summary>
-        public void ShowAllNurses()
-        {
-            //Show all Utentes
-            foreach (Enfermeiro e in enfermeiros)
-            {
-                Console.WriteLine("Name: {0}\tBirthdate: {1}\tNHS Number: {2}\tGender:{3}\tNurse Code:{4}\tSpecialty:{5}"
-            , e.name, e.birthDate, e.nhsNumber, e.gender,e.nurseCode, e.specialty);
-            }
-        }
-
+        
         /// <summary>
         /// Orders Enfermeiros by specialty
         /// </summary>
@@ -86,6 +82,7 @@ namespace DataManagement
         /// <returns></returns>
         public List<Enfermeiro> GetAvaliableNurses()
         {
+
             return enfermeiros.Where(enfermeiro => enfermeiro.avaliable).ToList();
         }
 

@@ -58,7 +58,6 @@
     <Compile Include="CustomExceptions\UtentesListNotFoundException.cs" />
     <Compile Include="Enfermeiros.cs" />
     <Compile Include="Medicos.cs" />
-    <Compile Include="ProcessoClinico.cs" />
     <Compile Include="ConsultationWaitingRoom.cs" />
     <Compile Include="TriagemWaitingRoom.cs" />
     <Compile Include="Utentes.cs" />
