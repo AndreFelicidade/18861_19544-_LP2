@@ -57,7 +57,13 @@ namespace DataManagement
         #endregion
 
         #region Methods
-        
+        #region Overrides
+        public override string ToString()
+        {
+            return "Person:" + name + " " + birthDate + " " + gender +
+                " " + nhsNumber + " " + address;
+        }
+        #endregion
         #region Properties
         /// <summary>
         /// Property to manipulate name of person

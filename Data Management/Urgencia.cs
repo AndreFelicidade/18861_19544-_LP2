@@ -46,7 +46,7 @@ namespace DataManagement
         /// </summary>
         /// <param name="u"></param>
         /// <returns></returns>
-        public int FindUrgencyLevel(Utente u)
+        public int Queue(Utente u)
         {
             if (u.levelOfUrgency > 4)
             {

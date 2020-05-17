@@ -74,10 +74,16 @@ namespace DataManagement
         //fora com os voids
         //fazer overrides
 
-        
+        #region Overrides
+        public override string ToString()
+        {
+            return "Utente:" + name + " " + birthDate +
+                " " + levelOfUrgency;
+        }
+        #endregion
 
         #region Properties
-        
+
         /// <summary>
         /// Gets Level of urgency for an Utente
         /// </summary>

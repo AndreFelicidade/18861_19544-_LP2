@@ -18,11 +18,11 @@ namespace DataManagement
         /// <summary>
         /// Initializing attributes
         /// </summary>
-        protected int nurseCode = 0;
-        protected int levelOfUrgency = 0;
+        protected int nurseCode;
+        protected int levelOfUrgency ;
         protected string symptoms;
-        protected float temperature = 0;
-        protected float bloodPressure = 0;
+        protected float temperature;
+        protected float bloodPressure;
 
 
 

@@ -49,7 +49,13 @@ namespace DataManagement
         #endregion
 
         #region Methods
-
+        #region Overrides
+        public override string ToString()
+        {
+            return "Nurse:" + name + " " + birthDate +
+                " " + nurseCode + " " + specialty;
+        }
+        #endregion
 
         #region Properties
 

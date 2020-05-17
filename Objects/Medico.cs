@@ -50,7 +50,13 @@ namespace DataManagement
 
         #region Methods
 
-
+        #region Overrides
+        public override string ToString()
+        {
+            return "Doctor:" + name + " " + birthDate +
+                " " + doctorCode + " " + specialty;
+        }
+        #endregion
         #region Properties
 
         /// <summary>

@@ -1,8 +1,7 @@
-﻿using System;
+﻿using DataManagement.CustomExceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using DataManagement;
-using DataManagement.CustomExceptions;
 
 ///<copyright file = "Utentes.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -28,7 +27,7 @@ namespace DataManagement
         {
             try
             {
-                if(String.IsNullOrEmpty(utente.name))
+                if (String.IsNullOrEmpty(utente.name))
                 {
                     throw new Exception("Invalid Name");
                 }
@@ -41,18 +40,31 @@ namespace DataManagement
                 return false;
             }
         }
-        
-    /// <summary>
-    /// Printing all utentes
-    /// </summary>
-        public void ShowAllUtentes()
-    {
-        //Show all Utentes
-        foreach (Utente u in utentes)
+
+        /// <summary>
+        /// Printing all utentes
+        /// </summary>
+        public Utente ShowAllUtentes()//
         {
-            Console.WriteLine("Name: {0}\tBirthdate: {1}\tNHS Number: {2}\tGender:{3}\tLevel Of urgency:{4}"
-        , u.name, u.birthDate, u.nhsNumber, u.gender, u.levelOfUrgency);
-        }
+            Utente ut = null;
+            try
+            {
+                if (utentes == null)
+                {
+                    throw new UtentesListNotFoundException();
+                }
+                //Show all Utentes--not in windows form yet
+                foreach (Utente u in utentes)
+                {
+                    return u;
+                }
+            }
+            catch (Exception e)
+            {
+                //MessageBox.Show(e.Message);
+                return ut;
+            }
+            return ut;
     }
 
 
@@ -77,7 +89,7 @@ namespace DataManagement
                 return false;
             }
         }
-    #endregion
+        #endregion
 
-}
+    }
 }

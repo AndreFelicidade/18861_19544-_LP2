@@ -51,7 +51,13 @@ namespace DataManagement
         #endregion
 
         #region Methods
-
+        #region Overrides
+        public override string ToString()
+        {
+            return "Hospital:" + hospitalCode + " " + hospitalAddress +
+                " " + hospitalNif;
+        }
+        #endregion
 
         #region Properties
 
