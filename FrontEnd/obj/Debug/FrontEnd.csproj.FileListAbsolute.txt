@@ -1,0 +1,3 @@
+C:\Users\ritaf\Source\Repos\AndreFelicidade\18861_19544-_LP2\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Users\ritaf\Source\Repos\AndreFelicidade\18861_19544-_LP2\FrontEnd\obj\Debug\FrontEnd.Properties.Resources.resources
+C:\Users\ritaf\Source\Repos\AndreFelicidade\18861_19544-_LP2\FrontEnd\obj\Debug\FrontEnd.csproj.GenerateResource.cache
