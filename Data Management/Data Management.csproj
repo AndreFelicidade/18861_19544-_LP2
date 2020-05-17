@@ -49,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsultaMedica.cs" />
@@ -58,8 +59,8 @@
     <Compile Include="Enfermeiros.cs" />
     <Compile Include="Medicos.cs" />
     <Compile Include="ProcessoClinico.cs" />
-    <Compile Include="Triagem.cs" />
-    <Compile Include="Urgencia.cs" />
+    <Compile Include="ConsultationWaitingRoom.cs" />
+    <Compile Include="TriagemWaitingRoom.cs" />
     <Compile Include="Utentes.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +80,14 @@
       <Project>{5569e721-cfb4-43a0-a0b1-5972df08f604}</Project>
       <Name>Objects</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -22,16 +22,13 @@ namespace DataManagement
         /// </summary>
         public int patientNumber;
         public string clinicalCase;
-        public int levelOfUrgency;
-        public int doctorCode;//Code of the doctor seeing to the patient
+        public Medico doctor; // Doctor seeing the patient
         public int nurseCode;
         public bool triageState;
         public bool seenByDoctor;
         public bool active;
 
         #endregion
-
-
 
         #region Behavior
 
@@ -42,9 +39,8 @@ namespace DataManagement
         /// </summary>
         public Utente()
         {
-            
-        }
 
+        }
 
         /// <summary>
         /// Creates a new Utente, taking parameters
@@ -56,16 +52,15 @@ namespace DataManagement
         /// <param name="nc"></param>
         /// <param name="ts"></param>
         /// <param name="sbd"></param>
-        public Utente(int lou, int pn, string cc, int dc, int nc, bool ts, bool sbd)
+        public Utente(int pn, string cc, Medico dc, int nc, bool ts, bool sbd)
         {
-            levelOfUrgency = lou;
             patientNumber = pn;
-            clinicalCase = cc;        
-            doctorCode = dc;//Code of the doctor seeing to the patient
+            clinicalCase = cc;
+            doctor = dc;//Code of the doctor seeing to the patient
             nurseCode = nc;
             triageState = ts;
             seenByDoctor = sbd;
-    }
+        }
         #endregion
 
         #region Methods
@@ -74,22 +69,9 @@ namespace DataManagement
         //fora com os voids
         //fazer overrides
 
-        
+
 
         #region Properties
-        
-        /// <summary>
-        /// Gets Level of urgency for an Utente
-        /// </summary>
-        public int LevelOfUrgency
-        {
-            get { return levelOfUrgency; }
-            set {if (value > 0 && value < 6)
-                {
-                    levelOfUrgency = value;
-                } }
-        }
-
         /// <summary>
         /// Gets patient number for an Utente
         /// </summary>
@@ -111,10 +93,10 @@ namespace DataManagement
         /// <summary>
         /// Gets doctor code for an Utente
         /// </summary>
-        public int DoctorCode
+        public Medico Doctor
         {
-            get { return doctorCode; }
-            set { doctorCode = value; }
+            get { return doctor; }
+            set { doctor = value; }
         }
 
         /// <summary>
@@ -132,8 +114,11 @@ namespace DataManagement
         public bool TriageState
         {
             get { return triageState; }
-            set {if(value == true || value == false) 
-                triageState = value; }
+            set
+            {
+                if (value == true || value == false)
+                    triageState = value;
+            }
         }
 
         /// <summary>
@@ -142,8 +127,11 @@ namespace DataManagement
         public bool SeenByDoctor
         {
             get { return seenByDoctor; }
-            set {if(value == true || value == false) 
-                seenByDoctor = value; }
+            set
+            {
+                if (value == true || value == false)
+                    seenByDoctor = value;
+            }
         }
 
         /// <summary>
@@ -152,8 +140,11 @@ namespace DataManagement
         public bool Active
         {
             get { return active; }
-            set {if(value == true || value == false) 
-                active = value; }
+            set
+            {
+                if (value == true || value == false)
+                    active = value;
+            }
         }
 
         #endregion

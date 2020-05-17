@@ -84,9 +84,11 @@ namespace DataManagement
         /// Gets avaliable number of nurses
         /// </summary>
         /// <returns></returns>
-        public int GetAvaliableNurses()
+        public List<Enfermeiro> GetAvaliableNurses()
         {
-            
+            return enfermeiros.Where(enfermeiro => enfermeiro.avaliable).ToList();
         }
+
+        #endregion
     }
 }

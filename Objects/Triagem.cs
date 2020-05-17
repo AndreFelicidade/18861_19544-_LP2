@@ -12,37 +12,33 @@ using System.Threading.Tasks;
 
 namespace DataManagement
 {
-    class Triagem
+    public class Triagem
     {
+        public enum LevelsOfUrgency : ushort
+        {
+            Red = 0,
+            Orange = 1,
+            Yellow = 2,
+            Green = 3,
+            Blue = 4
+        }
+
         #region State Of Class
         /// <summary>
         /// Initializing attributes
         /// </summary>
-        protected int nurseCode = 0;
-        protected int levelOfUrgency = 0;
+        protected Enfermeiro nurse;
         protected string symptoms;
         protected float temperature = 0;
         protected float bloodPressure = 0;
-
-
-
-
+        protected Utente utente;
+        protected DateTime time;
+        protected LevelsOfUrgency levelOfUrgency;
         #endregion
-
-
 
         #region Behavior
 
         #region Builder
-
-        /// <summary>
-        /// Builder by omission
-        /// </summary>
-        public Triagem()
-        {
-
-        }
-
         /// <summary>
         /// Builder for triagem
         /// </summary>
@@ -51,39 +47,46 @@ namespace DataManagement
         /// <param name="symp"></param>
         /// <param name="temp"></param>
         /// <param name="bp"></param>
-        public Triagem(int nc, int lou, string symp, float temp, float bp)
+        public Triagem(Enfermeiro nc, Utente u, string symp, float temp, float bp, LevelsOfUrgency lou, DateTime t)
         {
-            nurseCode = nc;
-            levelOfUrgency = lou;
+            nurse = nc;
             symptoms = symp;
             temperature = temp;
             bloodPressure = bp;
-    }
+            utente = u;
+            time = t;
+            levelOfUrgency = lou;
+        }
         #endregion
 
         #region Methods
-        public int SetUrgencyLevelOFUtente(Utente u)
-        {
-            u.levelOfUrgency = //nurse input
-                return u.levelOfUrgency;
-        }
+
 
         #region Properties
 
 
         /// <summary>
-        /// Gets nurse code for triagem 
+        /// Gets nurse for triagem 
         /// </summary>
-        public int NurseCode
+        public Enfermeiro Nurse
         {
-            get { return nurseCode; }
-            set { nurseCode = value; }
+            get { return nurse; }
+            set { nurse = value; }
+        }
+
+        /// <summary>
+        /// Gets time for triagem 
+        /// </summary>
+        public DateTime Time
+        {
+            get { return time; }
+            set { time = value; }
         }
 
         /// <summary>
         /// Gets level of urgency of patient for triagem 
         /// </summary>
-        public int LevelOfUrgency
+        public LevelsOfUrgency LevelOfUrgency
         {
             get { return levelOfUrgency; }
             set { levelOfUrgency = value; }

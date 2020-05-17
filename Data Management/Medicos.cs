@@ -66,7 +66,7 @@ namespace DataManagement
             {
                 if (medicos == null)
                 {
-                    throw new MedicosListNotFoundException();
+                    //throw new MedicosListNotFoundException();
                 }
                 medicos = medicos.OrderBy(x => x.specialty).ToList();
                 return true;
@@ -88,5 +88,7 @@ namespace DataManagement
             int avaliableDoctors = 3;
             return avaliableDoctors;
         }
+
+        #endregion
     }
 }
