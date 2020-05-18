@@ -12,6 +12,10 @@ using System.Threading.Tasks;
 
 namespace Objects
 {
+    /// <summary>
+    /// Class that manages the clinical process of an Utente
+    /// </summary>
+    [Serializable]
     public class ProcessoClinico
     {
         #region State Of Class

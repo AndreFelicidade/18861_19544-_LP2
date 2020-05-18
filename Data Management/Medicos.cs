@@ -13,6 +13,10 @@ using Objects;
 
 namespace Objects
 {
+    /// <summary>
+    /// Class that manages doctor data
+    /// </summary>
+    [Serializable]
     class Medicos
     {
         /// <summary>

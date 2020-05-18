@@ -73,6 +73,10 @@ namespace Objects
             }
         }
 
+        /// <summary>
+        /// Gets the next patient for a medical Consultation
+        /// </summary>
+        /// <returns></returns>
         public Triagem NextPatient()
         {
             if (lv5Q.Count > 0)

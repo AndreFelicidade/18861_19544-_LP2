@@ -13,8 +13,9 @@ using System.Threading.Tasks;
 namespace Objects
 {
     /// <summary>
-    /// Hospital Info
+    /// Hospital Class , contains variables to store its info
     /// </summary>
+    [Serializable]
     class Hospital
     {
         #region Class stats

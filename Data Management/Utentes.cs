@@ -11,6 +11,10 @@ using System.Linq;
 
 namespace Objects
 {
+    /// <summary>
+    /// Class that manages Utentes data
+    /// </summary>
+    [Serializable]
     public class Utentes
     {
         /// <summary>

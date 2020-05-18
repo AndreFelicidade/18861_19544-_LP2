@@ -15,6 +15,7 @@ namespace Objects
     /// <summary>
     /// Doctor class
     /// </summary>
+    [Serializable]
     public class Medico : Pessoa
     {
         #region Class stats

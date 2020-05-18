@@ -15,6 +15,7 @@ namespace Objects
     /// <summary>
     /// Gets all information from triagem, doctor code that saw the patient, diagnosis, medication, tests
     /// </summary>
+    [Serializable]
     public class ConsultaMedica
     {
         #region State Of Class

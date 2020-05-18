@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Objects;
-using Objects;
+
 
 
 ///<copyright file = "Utente.cs"	company = "IPCA">
@@ -16,6 +16,7 @@ using Objects;
 
 namespace Objects
 {
+    [Serializable]
     public class Utente : Pessoa
     {
         #region State Of Class
