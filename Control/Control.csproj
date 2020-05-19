@@ -37,7 +37,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomComparer.cs" />
+    <Compile Include="DoctorRules.cs" />
     <Compile Include="NurseRules.cs" />
+    <Compile Include="UtenteRules.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data Management\Data Management.csproj">

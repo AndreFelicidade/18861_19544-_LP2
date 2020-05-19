@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 ///<copyright file = "ProfissionalDeSaude.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -24,7 +20,7 @@ namespace Objects
         /// </summary>
         public Triagem triage;//consulta medica tambem tem triagem?
         public ConsultaMedica doctorAppointment;
-        
+
 
         #endregion
 

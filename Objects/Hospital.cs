@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 ///<copyright file = "Enfermeiro.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -35,18 +31,18 @@ namespace Objects
 
         }
 
-       /// <summary>
-       /// Builder for hospital
-       /// </summary>
-       /// <param name="hc"></param>
-       /// <param name="ha"></param>
-       /// <param name="hnif"></param>
+        /// <summary>
+        /// Builder for hospital
+        /// </summary>
+        /// <param name="hc"></param>
+        /// <param name="ha"></param>
+        /// <param name="hnif"></param>
         public Hospital(int hc, string ha, int hnif)
         {
             hospitalCode = hc;
             hospitalAddress = ha;
             hospitalNif = hnif;
-            
+
         }
 
         #endregion

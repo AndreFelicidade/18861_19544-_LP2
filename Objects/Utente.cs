@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Objects;
 
 
 
@@ -23,7 +18,7 @@ namespace Objects
         /// <summary>
         /// Initializing attributes
         /// </summary>
-        public int patientNumber;               
+        public int patientNumber;
         public bool active;
         public ProcessoClinico clinicalProcess;
 
@@ -50,7 +45,7 @@ namespace Objects
 
         public Utente(int pn, bool ac, ProcessoClinico pc)
         {
-            patientNumber = pn;           
+            patientNumber = pn;
             active = ac;
             clinicalProcess = pc;
         }
@@ -93,7 +88,7 @@ namespace Objects
             set { clinicalProcess = value; }
         }
 
-        
+
         /// <summary>
         /// If true, utente is currently not discharged.
         /// </summary>

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 ///<copyright file = "ProfissionalDeSaude.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -15,7 +11,7 @@ namespace Objects
     /// <summary>
     /// Class of triagem
     /// </summary>
-    
+
     public class Triagem
     {
         /// <summary>

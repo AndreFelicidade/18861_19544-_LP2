@@ -1,8 +1,8 @@
 ﻿using Objects.CustomExceptions;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 
 ///<copyright file = "Enfermeiros.cs"	company = "IPCA">
@@ -30,6 +30,24 @@ namespace Objects
         public static List<Enfermeiro> enfermeiros = new List<Enfermeiro>();
 
         #region Methods
+        /// <summary>
+        /// find nurse code
+        /// </summary>
+        public Enfermeiro FindNurseID(int nurseCod)
+        {
+            return enfermeiros.Find(u => u.nurseCode == nurseCod);
+
+        }
+
+        /// <summary>
+        /// find for name and nhsnumber
+        /// </summary>
+        public Enfermeiro FindNurseName(int nhsNumber, string name)
+        {
+            return enfermeiros.Find(u => u.name == name && u.nhsNumber == nhsNumber);
+
+        }
+
         /// <summary>
         /// returns list of nurses
         /// </summary>
@@ -139,7 +157,7 @@ namespace Objects
                     s.Close();//closing anything
                     s.Dispose();//file related
                     return true;
-            }
+                }
                 catch (Exception e)
                 {
                     throw new Exception("WARNING: Something went wrong when saving nurse data!");
@@ -155,7 +173,7 @@ namespace Objects
         /// </summary>
         public bool LoadNurses()
         {
-           if(File.Exists(@"D:\IPCA\LP II\TP1LP2\TP2Files\NurseFile.bin"))
+            if (File.Exists(@"D:\IPCA\LP II\TP1LP2\TP2Files\NurseFile.bin"))
             {
                 try
                 {

@@ -11,12 +11,10 @@ using System.Linq;
 namespace Control
 {
     /// <summary>
-    /// Rules that dictate how the user accesses the data
-    /// </summary>
-    [Serializable]
+    /// Class that dictates how the user accesses the data of nurses
+    /// </summary>    
     class NurseRules
     {
-        [NonSerialized]
         private CustomComparer comparer = new CustomComparer();
 
         /// <summary>
@@ -35,7 +33,7 @@ namespace Control
         /// Compares a new nurse to nurses already registered
         /// </summary>
         /// <param name="enf"></param>
-        
+
         public void ValidateNurse(Enfermeiro enf)
         {
             if (Enfermeiros.enfermeiros.Any(y => comparer.Compare(y, enf) == -1))
@@ -48,7 +46,7 @@ namespace Control
         /// returns list of all nurses
         /// </summary>
         /// <returns></returns>
-        
+
         public List<Enfermeiro> SeeRegisteredNurses()
         {
             return Enfermeiros.enfermeiros;
@@ -79,7 +77,6 @@ namespace Control
         /// Gets the nurse list ordered by specialty, readies it to send to the front end layer
         /// </summary>
         /// <returns></returns>
-       
         public List<Enfermeiro> OrderNurseBySpecialty()
         {
             if (Enfermeiros.OrderBySpecialty() == true)
