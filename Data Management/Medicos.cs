@@ -48,7 +48,7 @@ namespace Objects
         /// </summary>
         public void ShowAllMedicos()
         {
-            //Show all Utentes
+            //Show all medicos
             foreach (Medico m in medicos)
             {
                 Console.WriteLine("Name: {0}\tBirthdate: {1}\tNHS Number: {2}\tGender:{3}\tDoctor Code:{4}\tSpecialty:{5}"
@@ -83,10 +83,10 @@ namespace Objects
         /// Gets doctors that aren't busy
         /// </summary>
         /// <returns></returns>
-        public int GetAvaliableDoctors()
+        public List<Medico> GetAvaliableDoctors()
         {
-            int avaliableDoctors = 3;
-            return avaliableDoctors;
+
+            return medicos.Where(medico => medico.avaliable).ToList();
         }
 
         #endregion

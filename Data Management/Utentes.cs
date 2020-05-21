@@ -110,6 +110,10 @@ namespace Objects
                 return false;
             }
         }
+        public List <ProcessoClinico> AllClinicalProcess()
+        {
+            return utentes.Select(utente => utente.clinicalProcess).ToList();
+        }
         #endregion
 
     }
