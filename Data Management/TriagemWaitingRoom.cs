@@ -1,11 +1,8 @@
 ﻿// autor Rita Silva
 // LESI
 
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace Objects
@@ -33,10 +30,10 @@ namespace Objects
             return queue.Dequeue();
 
         }
-         
+
         public List<Utente> ListUtentes()
         {
-           return queue.ToList();
+            return queue.ToList();
 
         }
 

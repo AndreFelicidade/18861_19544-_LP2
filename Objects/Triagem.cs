@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 ///<copyright file = "ProfissionalDeSaude.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -12,8 +8,16 @@ using System.Threading.Tasks;
 
 namespace Objects
 {
+    /// <summary>
+    /// Class of triagem
+    /// </summary>
+
     public class Triagem
     {
+        /// <summary>
+        /// Levels of urgency attributed in triagem, red = 0, is the most serious one
+        /// blue = 4, least serious one
+        /// </summary>
         public enum LevelsOfUrgency : ushort
         {
             Red = 0,
@@ -29,8 +33,8 @@ namespace Objects
         /// </summary>
         protected Enfermeiro nurse;
         protected string symptoms;
-        protected float temperature = 0;
-        protected float bloodPressure = 0;
+        protected float temperature;
+        protected float bloodPressure;
         protected Utente utente;
         protected DateTime time;
         protected LevelsOfUrgency levelOfUrgency;

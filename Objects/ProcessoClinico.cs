@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 ///<copyright file = "ProfissionalDeSaude.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -12,6 +8,10 @@ using System.Threading.Tasks;
 
 namespace Objects
 {
+    /// <summary>
+    /// Class that manages the clinical process of an Utente
+    /// </summary>
+    [Serializable]
     public class ProcessoClinico
     {
         #region State Of Class
@@ -20,7 +20,7 @@ namespace Objects
         /// </summary>
         public Triagem triage;//consulta medica tambem tem triagem?
         public ConsultaMedica doctorAppointment;
-        
+
 
         #endregion
 

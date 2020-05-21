@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Objects.CustomExceptions;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using Objects;
-using Objects.CustomExceptions;
+using System.Runtime.Serialization.Formatters.Binary;
 
 ///<copyright file = "Enfermeiros.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -15,6 +13,14 @@ using Objects.CustomExceptions;
 
 namespace Objects
 {
+    /// <summary>
+    /// Class that manages nurse data
+    /// </summary>
+    [Serializable]//https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/serialization/
+    //Serialization is the process of converting an object into a stream of bytes 
+    //to store the object or transmit it to memory, a database, or a file. 
+    //Its main purpose is to save the state of an object in order to be able to recreate it when needed.
+    //The reverse process is called deserialization.
     public class Enfermeiros
     {
 
@@ -25,6 +31,24 @@ namespace Objects
 
         #region Methods
         /// <summary>
+        /// find nurse code
+        /// </summary>
+        public Enfermeiro FindNurseID(int nurseCod)
+        {
+            return enfermeiros.Find(u => u.nurseCode == nurseCod);
+
+        }
+
+        /// <summary>
+        /// find for name and nhsnumber
+        /// </summary>
+        public Enfermeiro FindNurseName(int nhsNumber, string name)
+        {
+            return enfermeiros.Find(u => u.name == name && u.nhsNumber == nhsNumber);
+
+        }
+
+        /// <summary>
         /// returns list of nurses
         /// </summary>
         /// <returns></returns>
@@ -32,10 +56,15 @@ namespace Objects
         {
             return enfermeiros;
         }
+
         /// <summary>
         /// Adding an enfermeiro to the list
+        /// Static because i only need to work with the object nurse
+        /// https://www.c-sharpcorner.com/article/when-to-use-static-classes-in-c-sharp/
+        /// "All static members are called directly using the class name."
+        /// Making them usefull for easy communication between the data management and business rules layer
         /// </summary>
-        public bool AddEnfermeiro(Enfermeiro enf)
+        public static bool AddNurse(Enfermeiro enf)
         {
             try
             {
@@ -53,7 +82,7 @@ namespace Objects
             }
         }
 
-        
+
         /// <summary>
         /// Orders Enfermeiros by specialty
         /// </summary>
@@ -86,6 +115,85 @@ namespace Objects
             return enfermeiros.Where(enfermeiro => enfermeiro.avaliable).ToList();
         }
 
+        /// <summary>
+        /// Allows editing of the data of a nurse
+        /// </summary>
+        /// <param name="enf"></param>
+        /// <param name="birthDate"></param>
+        /// <param name="nhsNumber"></param>
+        /// <param name="name"></param>
+        /// <param name="gender"></param>
+        /// <param name="address"></param>
+        /// <param name="nurseCode"></param>
+        /// <param name="specialty"></param>
+        /// <param name="avaliable"></param>
+        public static void EditNurse(Enfermeiro enf, DateTime birthDate, int nhsNumber, string name,
+            string gender, string address, int nurseCode, string specialty, bool avaliable)
+        {
+            enf.birthDate = birthDate;
+            enf.nhsNumber = nhsNumber;
+            enf.name = name;
+            enf.gender = gender;
+            enf.address = address;
+            enf.avaliable = avaliable;
+            enf.specialty = specialty;
+            enf.nurseCode = nurseCode;
+        }
+
+        /// <summary>
+        /// Save nurse data to file
+        /// </summary>
+        /// <returns></returns>
+        public bool SaveNurses()
+        {
+            if (File.Exists(@"D:\IPCA\LP II\TP1LP2\TP2Files\NurseFile.bin"))
+            {
+                try
+                {
+                    Stream s = File.Open(@"D:\IPCA\LP II\TP1LP2\TP2Files\NurseFile.bin", FileMode.Create, FileAccess.ReadWrite);
+                    BinaryFormatter b = new BinaryFormatter();
+                    b.Serialize(s, enfermeiros);//serializing nurse list -> putting them in the binary file
+                    s.Flush();//ending and
+                    s.Close();//closing anything
+                    s.Dispose();//file related
+                    return true;
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("WARNING: Something went wrong when saving nurse data!");
+                    //MessageBox.Show(e.Message);
+
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Loads nurses from file
+        /// </summary>
+        public bool LoadNurses()
+        {
+            if (File.Exists(@"D:\IPCA\LP II\TP1LP2\TP2Files\NurseFile.bin"))
+            {
+                try
+                {
+                    Stream s = File.Open(@"D:\IPCA\LP II\TP1LP2\TP2Files\NurseFile.bin", FileMode.Open, FileAccess.Read);
+                    BinaryFormatter bf = new BinaryFormatter();
+                    enfermeiros = (List<Enfermeiro>)bf.Deserialize(s);//Convert the saved data back into its collection type(List with the shape of Enfermeiro)
+                    s.Flush();//ending and
+                    s.Close();//closing anything
+                    s.Dispose();//file related
+                    return true;
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("WARNING: Something went wrong when loading nurse data!");
+                    //MessageBox.Show(e.Message);
+
+                }
+            }
+            return false;
+        }
         #endregion
     }
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 ///<copyright file = "Pessoa.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -84,8 +80,11 @@ namespace Objects
         public DateTime BirthDate
         {
             get { return birthDate; }
-            set {if (value <= DateTime.Today) 
-                birthDate = value; }
+            set
+            {
+                if (value <= DateTime.Today)
+                    birthDate = value;
+            }
         }
 
         /// <summary>

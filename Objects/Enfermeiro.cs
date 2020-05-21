@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 ///<copyright file = "Enfermeiro.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -15,6 +11,7 @@ namespace Objects
     /// <summary>
     /// Nurse class
     /// </summary>
+    [Serializable]
     public class Enfermeiro : Pessoa
     {
         #region Class stats
@@ -65,7 +62,7 @@ namespace Objects
         public int NurseCode
         {
             get { return nurseCode; }
-            set { nurseCode = value;}
+            set { nurseCode = value; }
         }
 
         /// <summary>

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 ///<copyright file = "Urgencia.cs"	company = "IPCA">
@@ -73,6 +71,10 @@ namespace Objects
             }
         }
 
+        /// <summary>
+        /// Gets the next patient for a medical Consultation
+        /// </summary>
+        /// <returns></returns>
         public Triagem NextPatient()
         {
             if (lv5Q.Count > 0)

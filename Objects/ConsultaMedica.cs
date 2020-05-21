@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 ///<copyright file = "ProfissionalDeSaude.cs"	company = "IPCA">
 ///Copyright IPCA </copyright>
@@ -15,6 +11,7 @@ namespace Objects
     /// <summary>
     /// Gets all information from triagem, doctor code that saw the patient, diagnosis, medication, tests
     /// </summary>
+    [Serializable]
     public class ConsultaMedica
     {
         #region State Of Class
