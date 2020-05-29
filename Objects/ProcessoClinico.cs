@@ -18,7 +18,7 @@ namespace Objects
         /// <summary>
         /// Initializing attributes
         /// </summary>
-        public Triagem triage;//consulta medica tambem tem triagem?
+        public Triagem triage;
         public ConsultaMedica doctorAppointment;
 
 

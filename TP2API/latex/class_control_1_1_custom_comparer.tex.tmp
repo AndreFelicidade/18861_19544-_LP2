@@ -1,0 +1,53 @@
+\hypertarget{class_control_1_1_custom_comparer}{}\doxysection{Control.\+Custom\+Comparer Class Reference}
+\label{class_control_1_1_custom_comparer}\index{Control.CustomComparer@{Control.CustomComparer}}
+
+
+This class introduces object comparison  
+
+
+
+
+Inheritance diagram for Control.\+Custom\+Comparer\+:
+% FIG 0
+
+
+Collaboration diagram for Control.\+Custom\+Comparer\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_control_1_1_custom_comparer_acfbecf922f33fb9eafb3eab4dfa60425}{Compare}} (object x, object y)
+\begin{DoxyCompactList}\small\item\em Compares 2 \mbox{\hyperlink{namespace_objects}{Objects}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class introduces object comparison 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_control_1_1_custom_comparer_acfbecf922f33fb9eafb3eab4dfa60425}\label{class_control_1_1_custom_comparer_acfbecf922f33fb9eafb3eab4dfa60425}} 
+\index{Control.CustomComparer@{Control.CustomComparer}!Compare@{Compare}}
+\index{Compare@{Compare}!Control.CustomComparer@{Control.CustomComparer}}
+\doxysubsubsection{\texorpdfstring{Compare()}{Compare()}}
+{\footnotesize\ttfamily int Control.\+Custom\+Comparer.\+Compare (\begin{DoxyParamCaption}\item[{object}]{x,  }\item[{object}]{y }\end{DoxyParamCaption})}
+
+
+
+Compares 2 \mbox{\hyperlink{namespace_objects}{Objects}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Control/Custom\+Comparer.\+cs\end{DoxyCompactItemize}

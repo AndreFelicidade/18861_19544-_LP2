@@ -1,0 +1,127 @@
+\hypertarget{class_control_1_1_nurse_rules}{}\doxysection{Control.\+Nurse\+Rules Class Reference}
+\label{class_control_1_1_nurse_rules}\index{Control.NurseRules@{Control.NurseRules}}
+
+
+Class that dictates how the user accesses the data of nurses  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_control_1_1_nurse_rules_a5bc94487d89c893ec858cb21760050ad}{Add\+Nurse}} (\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} enf)
+\begin{DoxyCompactList}\small\item\em Adds a nurse to the system list after validating it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_1_1_nurse_rules_aa64cffc4c9110953e1ea507f76dfe444}{Validate\+Nurse}} (\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} enf)
+\begin{DoxyCompactList}\small\item\em Compares a new nurse to nurses already registered \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} $>$ \mbox{\hyperlink{class_control_1_1_nurse_rules_ade2d6a5f3ded76500143054b35f5d274}{See\+Registered\+Nurses}} ()
+\begin{DoxyCompactList}\small\item\em returns list of all nurses \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} \mbox{\hyperlink{class_control_1_1_nurse_rules_a3575f7d7f0db4b95906e3a0360021fe9}{Editing\+Nurse}} (\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} enf, Date\+Time birth\+Date, int nhs\+Number, string name, string gender, string address, int nurse\+Code, string specialty, bool avaliable)
+\begin{DoxyCompactList}\small\item\em Enables editing of the information of a nurse \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} $>$ \mbox{\hyperlink{class_control_1_1_nurse_rules_ac7a2df3858cae96e53ebb6cdf71059f4}{Order\+Nurse\+By\+Specialty}} ()
+\begin{DoxyCompactList}\small\item\em Gets the nurse list ordered by specialty, readies it to send to the front end layer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that dictates how the user accesses the data of nurses 
+
+~\newline
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_control_1_1_nurse_rules_a5bc94487d89c893ec858cb21760050ad}\label{class_control_1_1_nurse_rules_a5bc94487d89c893ec858cb21760050ad}} 
+\index{Control.NurseRules@{Control.NurseRules}!AddNurse@{AddNurse}}
+\index{AddNurse@{AddNurse}!Control.NurseRules@{Control.NurseRules}}
+\doxysubsubsection{\texorpdfstring{AddNurse()}{AddNurse()}}
+{\footnotesize\ttfamily int Control.\+Nurse\+Rules.\+Add\+Nurse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}}]{enf }\end{DoxyParamCaption})}
+
+
+
+Adds a nurse to the system list after validating it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enf} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_nurse_rules_a3575f7d7f0db4b95906e3a0360021fe9}\label{class_control_1_1_nurse_rules_a3575f7d7f0db4b95906e3a0360021fe9}} 
+\index{Control.NurseRules@{Control.NurseRules}!EditingNurse@{EditingNurse}}
+\index{EditingNurse@{EditingNurse}!Control.NurseRules@{Control.NurseRules}}
+\doxysubsubsection{\texorpdfstring{EditingNurse()}{EditingNurse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} Control.\+Nurse\+Rules.\+Editing\+Nurse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}}]{enf,  }\item[{Date\+Time}]{birth\+Date,  }\item[{int}]{nhs\+Number,  }\item[{string}]{name,  }\item[{string}]{gender,  }\item[{string}]{address,  }\item[{int}]{nurse\+Code,  }\item[{string}]{specialty,  }\item[{bool}]{avaliable }\end{DoxyParamCaption})}
+
+
+
+Enables editing of the information of a nurse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enf} & \\
+\hline
+{\em birth\+Date} & \\
+\hline
+{\em nhs\+Number} & \\
+\hline
+{\em name} & \\
+\hline
+{\em gender} & \\
+\hline
+{\em address} & \\
+\hline
+{\em nurse\+Code} & \\
+\hline
+{\em specialty} & \\
+\hline
+{\em avaliable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_nurse_rules_ac7a2df3858cae96e53ebb6cdf71059f4}\label{class_control_1_1_nurse_rules_ac7a2df3858cae96e53ebb6cdf71059f4}} 
+\index{Control.NurseRules@{Control.NurseRules}!OrderNurseBySpecialty@{OrderNurseBySpecialty}}
+\index{OrderNurseBySpecialty@{OrderNurseBySpecialty}!Control.NurseRules@{Control.NurseRules}}
+\doxysubsubsection{\texorpdfstring{OrderNurseBySpecialty()}{OrderNurseBySpecialty()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}$>$ Control.\+Nurse\+Rules.\+Order\+Nurse\+By\+Specialty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the nurse list ordered by specialty, readies it to send to the front end layer 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_nurse_rules_ade2d6a5f3ded76500143054b35f5d274}\label{class_control_1_1_nurse_rules_ade2d6a5f3ded76500143054b35f5d274}} 
+\index{Control.NurseRules@{Control.NurseRules}!SeeRegisteredNurses@{SeeRegisteredNurses}}
+\index{SeeRegisteredNurses@{SeeRegisteredNurses}!Control.NurseRules@{Control.NurseRules}}
+\doxysubsubsection{\texorpdfstring{SeeRegisteredNurses()}{SeeRegisteredNurses()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}$>$ Control.\+Nurse\+Rules.\+See\+Registered\+Nurses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns list of all nurses 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_nurse_rules_aa64cffc4c9110953e1ea507f76dfe444}\label{class_control_1_1_nurse_rules_aa64cffc4c9110953e1ea507f76dfe444}} 
+\index{Control.NurseRules@{Control.NurseRules}!ValidateNurse@{ValidateNurse}}
+\index{ValidateNurse@{ValidateNurse}!Control.NurseRules@{Control.NurseRules}}
+\doxysubsubsection{\texorpdfstring{ValidateNurse()}{ValidateNurse()}}
+{\footnotesize\ttfamily void Control.\+Nurse\+Rules.\+Validate\+Nurse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}}]{enf }\end{DoxyParamCaption})}
+
+
+
+Compares a new nurse to nurses already registered 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enf} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Control/Nurse\+Rules.\+cs\end{DoxyCompactItemize}

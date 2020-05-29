@@ -1,0 +1,126 @@
+\hypertarget{class_control_1_1_doctor_rules}{}\doxysection{Control.\+Doctor\+Rules Class Reference}
+\label{class_control_1_1_doctor_rules}\index{Control.DoctorRules@{Control.DoctorRules}}
+
+
+Class that that dictates how the user accesses the data of nurses  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_control_1_1_doctor_rules_a057b7d0964435a285cf395f77141c5d0}{Add\+Doctor}} (\mbox{\hyperlink{class_objects_1_1_medico}{Medico}} med)
+\begin{DoxyCompactList}\small\item\em Adds a doctor to the system list after validating it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_1_1_doctor_rules_ade3d2f3f6a0ff4848586f1e0cf8fc1d1}{Validate\+Doctor}} (\mbox{\hyperlink{class_objects_1_1_medico}{Medico}} med)
+\begin{DoxyCompactList}\small\item\em Compares a new doctor to doctors already registered \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_objects_1_1_medico}{Medico}} $>$ \mbox{\hyperlink{class_control_1_1_doctor_rules_a2bc1eab024a184a4fb308494032afd0f}{See\+Registered\+Doctors}} ()
+\begin{DoxyCompactList}\small\item\em returns list of all doctors \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_objects_1_1_medico}{Medico}} \mbox{\hyperlink{class_control_1_1_doctor_rules_a278b023d51c11869664f350bdef54604}{Editing\+Doctor}} (\mbox{\hyperlink{class_objects_1_1_medico}{Medico}} med, Date\+Time birth\+Date, int nhs\+Number, string name, string gender, string address, int doc\+Code, string specialty, bool avaliable)
+\begin{DoxyCompactList}\small\item\em Enables editing of the information of a doctor \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_objects_1_1_medico}{Medico}} $>$ \mbox{\hyperlink{class_control_1_1_doctor_rules_a99b5d348676910385d16bbb4bb3bdd9a}{Order\+Doctor\+By\+Specialty}} ()
+\begin{DoxyCompactList}\small\item\em Gets the doctor list ordered by specialty, readies it to send to the front end layer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that that dictates how the user accesses the data of nurses 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_control_1_1_doctor_rules_a057b7d0964435a285cf395f77141c5d0}\label{class_control_1_1_doctor_rules_a057b7d0964435a285cf395f77141c5d0}} 
+\index{Control.DoctorRules@{Control.DoctorRules}!AddDoctor@{AddDoctor}}
+\index{AddDoctor@{AddDoctor}!Control.DoctorRules@{Control.DoctorRules}}
+\doxysubsubsection{\texorpdfstring{AddDoctor()}{AddDoctor()}}
+{\footnotesize\ttfamily int Control.\+Doctor\+Rules.\+Add\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}}]{med }\end{DoxyParamCaption})}
+
+
+
+Adds a doctor to the system list after validating it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em med} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_doctor_rules_a278b023d51c11869664f350bdef54604}\label{class_control_1_1_doctor_rules_a278b023d51c11869664f350bdef54604}} 
+\index{Control.DoctorRules@{Control.DoctorRules}!EditingDoctor@{EditingDoctor}}
+\index{EditingDoctor@{EditingDoctor}!Control.DoctorRules@{Control.DoctorRules}}
+\doxysubsubsection{\texorpdfstring{EditingDoctor()}{EditingDoctor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_medico}{Medico}} Control.\+Doctor\+Rules.\+Editing\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}}]{med,  }\item[{Date\+Time}]{birth\+Date,  }\item[{int}]{nhs\+Number,  }\item[{string}]{name,  }\item[{string}]{gender,  }\item[{string}]{address,  }\item[{int}]{doc\+Code,  }\item[{string}]{specialty,  }\item[{bool}]{avaliable }\end{DoxyParamCaption})}
+
+
+
+Enables editing of the information of a doctor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em med} & \\
+\hline
+{\em birth\+Date} & \\
+\hline
+{\em nhs\+Number} & \\
+\hline
+{\em name} & \\
+\hline
+{\em gender} & \\
+\hline
+{\em address} & \\
+\hline
+{\em doc\+Code} & \\
+\hline
+{\em specialty} & \\
+\hline
+{\em avaliable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_doctor_rules_a99b5d348676910385d16bbb4bb3bdd9a}\label{class_control_1_1_doctor_rules_a99b5d348676910385d16bbb4bb3bdd9a}} 
+\index{Control.DoctorRules@{Control.DoctorRules}!OrderDoctorBySpecialty@{OrderDoctorBySpecialty}}
+\index{OrderDoctorBySpecialty@{OrderDoctorBySpecialty}!Control.DoctorRules@{Control.DoctorRules}}
+\doxysubsubsection{\texorpdfstring{OrderDoctorBySpecialty()}{OrderDoctorBySpecialty()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}$>$ Control.\+Doctor\+Rules.\+Order\+Doctor\+By\+Specialty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the doctor list ordered by specialty, readies it to send to the front end layer 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_doctor_rules_a2bc1eab024a184a4fb308494032afd0f}\label{class_control_1_1_doctor_rules_a2bc1eab024a184a4fb308494032afd0f}} 
+\index{Control.DoctorRules@{Control.DoctorRules}!SeeRegisteredDoctors@{SeeRegisteredDoctors}}
+\index{SeeRegisteredDoctors@{SeeRegisteredDoctors}!Control.DoctorRules@{Control.DoctorRules}}
+\doxysubsubsection{\texorpdfstring{SeeRegisteredDoctors()}{SeeRegisteredDoctors()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}$>$ Control.\+Doctor\+Rules.\+See\+Registered\+Doctors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns list of all doctors 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_doctor_rules_ade3d2f3f6a0ff4848586f1e0cf8fc1d1}\label{class_control_1_1_doctor_rules_ade3d2f3f6a0ff4848586f1e0cf8fc1d1}} 
+\index{Control.DoctorRules@{Control.DoctorRules}!ValidateDoctor@{ValidateDoctor}}
+\index{ValidateDoctor@{ValidateDoctor}!Control.DoctorRules@{Control.DoctorRules}}
+\doxysubsubsection{\texorpdfstring{ValidateDoctor()}{ValidateDoctor()}}
+{\footnotesize\ttfamily void Control.\+Doctor\+Rules.\+Validate\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}}]{med }\end{DoxyParamCaption})}
+
+
+
+Compares a new doctor to doctors already registered 
+
+
+\begin{DoxyParams}{Parameters}
+{\em med} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Control/Doctor\+Rules.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,185 @@
+\hypertarget{class_objects_1_1_enfermeiros}{}\doxysection{Objects.\+Enfermeiros Class Reference}
+\label{class_objects_1_1_enfermeiros}\index{Objects.Enfermeiros@{Objects.Enfermeiros}}
+
+
+Class that manages nurse data  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} \mbox{\hyperlink{class_objects_1_1_enfermeiros_a491ef3d6c5c1227de19d98f6341bd293}{Find\+Nurse\+ID}} (int nurse\+Cod)
+\begin{DoxyCompactList}\small\item\em find nurse code \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} \mbox{\hyperlink{class_objects_1_1_enfermeiros_a168cb37d4052fd2f551701c31a7ecf3e}{Find\+Nurse\+Name}} (int nhs\+Number, string name)
+\begin{DoxyCompactList}\small\item\em find for name and nhsnumber \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} $>$ \mbox{\hyperlink{class_objects_1_1_enfermeiros_a8a93af33fbc6e6ca0fc11b03f6635276}{Get\+Avaliable\+Nurses}} ()
+\begin{DoxyCompactList}\small\item\em Gets avaliable number of nurses \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_objects_1_1_enfermeiros_af9fe8677dffb6c6f2c3bb7f5ef7dd9bb}{Save\+Nurses}} ()
+\begin{DoxyCompactList}\small\item\em Save nurse data to file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_objects_1_1_enfermeiros_a3d35c7aa91f31d5dbb0f8b78c3fe7235}{Load\+Nurses}} ()
+\begin{DoxyCompactList}\small\item\em Loads nurses from file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} $>$ \mbox{\hyperlink{class_objects_1_1_enfermeiros_ae26c194336e1539669112c24d05bcd6b}{Get\+List}} ()
+\begin{DoxyCompactList}\small\item\em returns list of nurses \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_objects_1_1_enfermeiros_a93133ab1ffb2b616f5b663e8d179510b}{Add\+Nurse}} (\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} enf)
+\begin{DoxyCompactList}\small\item\em Adding an enfermeiro to the list Static because i only need to work with the object nurse \href{https://www.c-sharpcorner.com/article/when-to-use-static-classes-in-c-sharp/}{\texttt{ https\+://www.\+c-\/sharpcorner.\+com/article/when-\/to-\/use-\/static-\/classes-\/in-\/c-\/sharp/}} \char`\"{}\+All static members are called directly using the class name.\char`\"{} Making them usefull for easy communication between the data management and business rules layer \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_objects_1_1_enfermeiros_a5b7b174ff7226d9c3c357039948c0a2e}{Order\+By\+Specialty}} ()
+\begin{DoxyCompactList}\small\item\em Orders \mbox{\hyperlink{class_objects_1_1_enfermeiros}{Enfermeiros}} by specialty \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_objects_1_1_enfermeiros_a0fee924146e5acc0e72f5e4b96be99ef}{Edit\+Nurse}} (\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} enf, Date\+Time birth\+Date, int nhs\+Number, string name, string gender, string address, int nurse\+Code, string specialty, bool avaliable)
+\begin{DoxyCompactList}\small\item\em Allows editing of the data of a nurse \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} $>$ \mbox{\hyperlink{class_objects_1_1_enfermeiros_a5b860312ff7682288b297ecc188aaded}{enfermeiros}} = new List$<$\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}$>$()
+\begin{DoxyCompactList}\small\item\em Where enfermeiros are stored \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that manages nurse data 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_a93133ab1ffb2b616f5b663e8d179510b}\label{class_objects_1_1_enfermeiros_a93133ab1ffb2b616f5b663e8d179510b}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!AddNurse@{AddNurse}}
+\index{AddNurse@{AddNurse}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{AddNurse()}{AddNurse()}}
+{\footnotesize\ttfamily static bool Objects.\+Enfermeiros.\+Add\+Nurse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}}]{enf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adding an enfermeiro to the list Static because i only need to work with the object nurse \href{https://www.c-sharpcorner.com/article/when-to-use-static-classes-in-c-sharp/}{\texttt{ https\+://www.\+c-\/sharpcorner.\+com/article/when-\/to-\/use-\/static-\/classes-\/in-\/c-\/sharp/}} \char`\"{}\+All static members are called directly using the class name.\char`\"{} Making them usefull for easy communication between the data management and business rules layer 
+
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_a0fee924146e5acc0e72f5e4b96be99ef}\label{class_objects_1_1_enfermeiros_a0fee924146e5acc0e72f5e4b96be99ef}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!EditNurse@{EditNurse}}
+\index{EditNurse@{EditNurse}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{EditNurse()}{EditNurse()}}
+{\footnotesize\ttfamily static void Objects.\+Enfermeiros.\+Edit\+Nurse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}}]{enf,  }\item[{Date\+Time}]{birth\+Date,  }\item[{int}]{nhs\+Number,  }\item[{string}]{name,  }\item[{string}]{gender,  }\item[{string}]{address,  }\item[{int}]{nurse\+Code,  }\item[{string}]{specialty,  }\item[{bool}]{avaliable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Allows editing of the data of a nurse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enf} & \\
+\hline
+{\em birth\+Date} & \\
+\hline
+{\em nhs\+Number} & \\
+\hline
+{\em name} & \\
+\hline
+{\em gender} & \\
+\hline
+{\em address} & \\
+\hline
+{\em nurse\+Code} & \\
+\hline
+{\em specialty} & \\
+\hline
+{\em avaliable} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_a491ef3d6c5c1227de19d98f6341bd293}\label{class_objects_1_1_enfermeiros_a491ef3d6c5c1227de19d98f6341bd293}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!FindNurseID@{FindNurseID}}
+\index{FindNurseID@{FindNurseID}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{FindNurseID()}{FindNurseID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} Objects.\+Enfermeiros.\+Find\+Nurse\+ID (\begin{DoxyParamCaption}\item[{int}]{nurse\+Cod }\end{DoxyParamCaption})}
+
+
+
+find nurse code 
+
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_a168cb37d4052fd2f551701c31a7ecf3e}\label{class_objects_1_1_enfermeiros_a168cb37d4052fd2f551701c31a7ecf3e}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!FindNurseName@{FindNurseName}}
+\index{FindNurseName@{FindNurseName}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{FindNurseName()}{FindNurseName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} Objects.\+Enfermeiros.\+Find\+Nurse\+Name (\begin{DoxyParamCaption}\item[{int}]{nhs\+Number,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+find for name and nhsnumber 
+
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_a8a93af33fbc6e6ca0fc11b03f6635276}\label{class_objects_1_1_enfermeiros_a8a93af33fbc6e6ca0fc11b03f6635276}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!GetAvaliableNurses@{GetAvaliableNurses}}
+\index{GetAvaliableNurses@{GetAvaliableNurses}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{GetAvaliableNurses()}{GetAvaliableNurses()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}$>$ Objects.\+Enfermeiros.\+Get\+Avaliable\+Nurses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets avaliable number of nurses 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_ae26c194336e1539669112c24d05bcd6b}\label{class_objects_1_1_enfermeiros_ae26c194336e1539669112c24d05bcd6b}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!GetList@{GetList}}
+\index{GetList@{GetList}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{GetList()}{GetList()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}$>$ Objects.\+Enfermeiros.\+Get\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+returns list of nurses 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_a3d35c7aa91f31d5dbb0f8b78c3fe7235}\label{class_objects_1_1_enfermeiros_a3d35c7aa91f31d5dbb0f8b78c3fe7235}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!LoadNurses@{LoadNurses}}
+\index{LoadNurses@{LoadNurses}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{LoadNurses()}{LoadNurses()}}
+{\footnotesize\ttfamily bool Objects.\+Enfermeiros.\+Load\+Nurses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads nurses from file 
+
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_a5b7b174ff7226d9c3c357039948c0a2e}\label{class_objects_1_1_enfermeiros_a5b7b174ff7226d9c3c357039948c0a2e}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!OrderBySpecialty@{OrderBySpecialty}}
+\index{OrderBySpecialty@{OrderBySpecialty}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{OrderBySpecialty()}{OrderBySpecialty()}}
+{\footnotesize\ttfamily static bool Objects.\+Enfermeiros.\+Order\+By\+Specialty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Orders \mbox{\hyperlink{class_objects_1_1_enfermeiros}{Enfermeiros}} by specialty 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_af9fe8677dffb6c6f2c3bb7f5ef7dd9bb}\label{class_objects_1_1_enfermeiros_af9fe8677dffb6c6f2c3bb7f5ef7dd9bb}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!SaveNurses@{SaveNurses}}
+\index{SaveNurses@{SaveNurses}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{SaveNurses()}{SaveNurses()}}
+{\footnotesize\ttfamily bool Objects.\+Enfermeiros.\+Save\+Nurses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save nurse data to file 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_objects_1_1_enfermeiros_a5b860312ff7682288b297ecc188aaded}\label{class_objects_1_1_enfermeiros_a5b860312ff7682288b297ecc188aaded}} 
+\index{Objects.Enfermeiros@{Objects.Enfermeiros}!enfermeiros@{enfermeiros}}
+\index{enfermeiros@{enfermeiros}!Objects.Enfermeiros@{Objects.Enfermeiros}}
+\doxysubsubsection{\texorpdfstring{enfermeiros}{enfermeiros}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}$>$ Objects.\+Enfermeiros.\+enfermeiros = new List$<$\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Where enfermeiros are stored 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Data Management/Enfermeiros.\+cs\end{DoxyCompactItemize}

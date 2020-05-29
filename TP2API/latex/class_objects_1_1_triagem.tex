@@ -1,0 +1,191 @@
+\hypertarget{class_objects_1_1_triagem}{}\doxysection{Objects.\+Triagem Class Reference}
+\label{class_objects_1_1_triagem}\index{Objects.Triagem@{Objects.Triagem}}
+
+
+Class of triagem  
+
+
+
+
+Collaboration diagram for Objects.\+Triagem\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_objects_1_1_triagem_ad3413a63468102f78a11d36dab98c70a}{Levels\+Of\+Urgency}} \+: ushort \{ \newline
+{\bfseries Red} = 0, 
+{\bfseries Orange} = 1, 
+{\bfseries Yellow} = 2, 
+{\bfseries Green} = 3, 
+\newline
+{\bfseries Blue} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Levels of urgency attributed in triagem, red = 0, is the most serious one blue = 4, least serious one \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_objects_1_1_triagem_a2e0b15c94f506a60ca7c8b379d17d52e}{Triagem}} (\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} nc, \mbox{\hyperlink{class_objects_1_1_utente}{Utente}} u, string symp, float temp, float bp, \mbox{\hyperlink{class_objects_1_1_triagem_ad3413a63468102f78a11d36dab98c70a}{Levels\+Of\+Urgency}} lou, Date\+Time t)
+\begin{DoxyCompactList}\small\item\em Builder for triagem \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} \mbox{\hyperlink{class_objects_1_1_triagem_acade5d8d46a806a89d1dd9464c667ea5}{nurse}}
+\begin{DoxyCompactList}\small\item\em Initializing attributes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_objects_1_1_triagem_ac57d79e93a103bd1151cad361f8902f7}\label{class_objects_1_1_triagem_ac57d79e93a103bd1151cad361f8902f7}} 
+string {\bfseries symptoms}
+\item 
+\mbox{\Hypertarget{class_objects_1_1_triagem_a4ca2e08beea25e9dbd75108299e0f2c0}\label{class_objects_1_1_triagem_a4ca2e08beea25e9dbd75108299e0f2c0}} 
+float {\bfseries temperature}
+\item 
+\mbox{\Hypertarget{class_objects_1_1_triagem_ab9f4c64e25380f3f499df07c25b54551}\label{class_objects_1_1_triagem_ab9f4c64e25380f3f499df07c25b54551}} 
+float {\bfseries blood\+Pressure}
+\item 
+\mbox{\Hypertarget{class_objects_1_1_triagem_a7a93345d2c930a2042bd89cf998e13aa}\label{class_objects_1_1_triagem_a7a93345d2c930a2042bd89cf998e13aa}} 
+\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} {\bfseries utente}
+\item 
+\mbox{\Hypertarget{class_objects_1_1_triagem_a0381d2f35e121a763e3b224ee148290e}\label{class_objects_1_1_triagem_a0381d2f35e121a763e3b224ee148290e}} 
+Date\+Time {\bfseries time}
+\item 
+\mbox{\Hypertarget{class_objects_1_1_triagem_a97016080caf48684839fcdce548f2a8e}\label{class_objects_1_1_triagem_a97016080caf48684839fcdce548f2a8e}} 
+\mbox{\hyperlink{class_objects_1_1_triagem_ad3413a63468102f78a11d36dab98c70a}{Levels\+Of\+Urgency}} {\bfseries level\+Of\+Urgency}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} \mbox{\hyperlink{class_objects_1_1_triagem_a723efb8bc833462eefd836bdbcee9862}{Nurse}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets nurse for triagem \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_objects_1_1_triagem_a3f8a7dc47c2e182a5a880175f45dd94f}{Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets time for triagem \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_objects_1_1_triagem_ad3413a63468102f78a11d36dab98c70a}{Levels\+Of\+Urgency}} \mbox{\hyperlink{class_objects_1_1_triagem_ae74f8657e6456fa3e0ca4a43522e1d84}{Level\+Of\+Urgency}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets level of urgency of patient for triagem \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_objects_1_1_triagem_a635fabe7123779414f7e25dc70632bdf}{Symptoms}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets symptoms of patient for triagem \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_objects_1_1_triagem_a0d778c2060a11920c2ff3cdcb0c1acd5}{Temperature}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets temperature of patient for triagem \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_objects_1_1_triagem_a5491424d31b752623b992f5bc0352814}{Blood\+Pressure}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets blood pressure of patient for triagem \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of triagem 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_objects_1_1_triagem_ad3413a63468102f78a11d36dab98c70a}\label{class_objects_1_1_triagem_ad3413a63468102f78a11d36dab98c70a}} 
+\index{Objects.Triagem@{Objects.Triagem}!LevelsOfUrgency@{LevelsOfUrgency}}
+\index{LevelsOfUrgency@{LevelsOfUrgency}!Objects.Triagem@{Objects.Triagem}}
+\doxysubsubsection{\texorpdfstring{LevelsOfUrgency}{LevelsOfUrgency}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_objects_1_1_triagem_ad3413a63468102f78a11d36dab98c70a}{Objects.\+Triagem.\+Levels\+Of\+Urgency}} \+: ushort\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Levels of urgency attributed in triagem, red = 0, is the most serious one blue = 4, least serious one 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_objects_1_1_triagem_a2e0b15c94f506a60ca7c8b379d17d52e}\label{class_objects_1_1_triagem_a2e0b15c94f506a60ca7c8b379d17d52e}} 
+\index{Objects.Triagem@{Objects.Triagem}!Triagem@{Triagem}}
+\index{Triagem@{Triagem}!Objects.Triagem@{Objects.Triagem}}
+\doxysubsubsection{\texorpdfstring{Triagem()}{Triagem()}}
+{\footnotesize\ttfamily Objects.\+Triagem.\+Triagem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}}}]{nc,  }\item[{\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}}]{u,  }\item[{string}]{symp,  }\item[{float}]{temp,  }\item[{float}]{bp,  }\item[{\mbox{\hyperlink{class_objects_1_1_triagem_ad3413a63468102f78a11d36dab98c70a}{Levels\+Of\+Urgency}}}]{lou,  }\item[{Date\+Time}]{t }\end{DoxyParamCaption})}
+
+
+
+Builder for triagem 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nc} & \\
+\hline
+{\em lou} & \\
+\hline
+{\em symp} & \\
+\hline
+{\em temp} & \\
+\hline
+{\em bp} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_objects_1_1_triagem_acade5d8d46a806a89d1dd9464c667ea5}\label{class_objects_1_1_triagem_acade5d8d46a806a89d1dd9464c667ea5}} 
+\index{Objects.Triagem@{Objects.Triagem}!nurse@{nurse}}
+\index{nurse@{nurse}!Objects.Triagem@{Objects.Triagem}}
+\doxysubsubsection{\texorpdfstring{nurse}{nurse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} Objects.\+Triagem.\+nurse\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Initializing attributes 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_objects_1_1_triagem_a5491424d31b752623b992f5bc0352814}\label{class_objects_1_1_triagem_a5491424d31b752623b992f5bc0352814}} 
+\index{Objects.Triagem@{Objects.Triagem}!BloodPressure@{BloodPressure}}
+\index{BloodPressure@{BloodPressure}!Objects.Triagem@{Objects.Triagem}}
+\doxysubsubsection{\texorpdfstring{BloodPressure}{BloodPressure}}
+{\footnotesize\ttfamily float Objects.\+Triagem.\+Blood\+Pressure\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets blood pressure of patient for triagem 
+
+\mbox{\Hypertarget{class_objects_1_1_triagem_ae74f8657e6456fa3e0ca4a43522e1d84}\label{class_objects_1_1_triagem_ae74f8657e6456fa3e0ca4a43522e1d84}} 
+\index{Objects.Triagem@{Objects.Triagem}!LevelOfUrgency@{LevelOfUrgency}}
+\index{LevelOfUrgency@{LevelOfUrgency}!Objects.Triagem@{Objects.Triagem}}
+\doxysubsubsection{\texorpdfstring{LevelOfUrgency}{LevelOfUrgency}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_triagem_ad3413a63468102f78a11d36dab98c70a}{Levels\+Of\+Urgency}} Objects.\+Triagem.\+Level\+Of\+Urgency\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets level of urgency of patient for triagem 
+
+\mbox{\Hypertarget{class_objects_1_1_triagem_a723efb8bc833462eefd836bdbcee9862}\label{class_objects_1_1_triagem_a723efb8bc833462eefd836bdbcee9862}} 
+\index{Objects.Triagem@{Objects.Triagem}!Nurse@{Nurse}}
+\index{Nurse@{Nurse}!Objects.Triagem@{Objects.Triagem}}
+\doxysubsubsection{\texorpdfstring{Nurse}{Nurse}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_enfermeiro}{Enfermeiro}} Objects.\+Triagem.\+Nurse\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets nurse for triagem 
+
+\mbox{\Hypertarget{class_objects_1_1_triagem_a635fabe7123779414f7e25dc70632bdf}\label{class_objects_1_1_triagem_a635fabe7123779414f7e25dc70632bdf}} 
+\index{Objects.Triagem@{Objects.Triagem}!Symptoms@{Symptoms}}
+\index{Symptoms@{Symptoms}!Objects.Triagem@{Objects.Triagem}}
+\doxysubsubsection{\texorpdfstring{Symptoms}{Symptoms}}
+{\footnotesize\ttfamily string Objects.\+Triagem.\+Symptoms\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets symptoms of patient for triagem 
+
+\mbox{\Hypertarget{class_objects_1_1_triagem_a0d778c2060a11920c2ff3cdcb0c1acd5}\label{class_objects_1_1_triagem_a0d778c2060a11920c2ff3cdcb0c1acd5}} 
+\index{Objects.Triagem@{Objects.Triagem}!Temperature@{Temperature}}
+\index{Temperature@{Temperature}!Objects.Triagem@{Objects.Triagem}}
+\doxysubsubsection{\texorpdfstring{Temperature}{Temperature}}
+{\footnotesize\ttfamily float Objects.\+Triagem.\+Temperature\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets temperature of patient for triagem 
+
+\mbox{\Hypertarget{class_objects_1_1_triagem_a3f8a7dc47c2e182a5a880175f45dd94f}\label{class_objects_1_1_triagem_a3f8a7dc47c2e182a5a880175f45dd94f}} 
+\index{Objects.Triagem@{Objects.Triagem}!Time@{Time}}
+\index{Time@{Time}!Objects.Triagem@{Objects.Triagem}}
+\doxysubsubsection{\texorpdfstring{Time}{Time}}
+{\footnotesize\ttfamily Date\+Time Objects.\+Triagem.\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets time for triagem 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Objects/Triagem.\+cs\end{DoxyCompactItemize}

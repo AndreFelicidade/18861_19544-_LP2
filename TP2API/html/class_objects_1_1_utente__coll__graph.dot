@@ -1,0 +1,23 @@
+digraph "Objects.Utente"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Objects.Utente",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Pessoa",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_objects_1_1_pessoa.html",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" clinicalProcess" ,fontname="Helvetica"];
+  Node3 [label="Objects.ProcessoClinico",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_objects_1_1_processo_clinico.html",tooltip="Class that manages the clinical process of an Utente"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" doctorAppointment" ,fontname="Helvetica"];
+  Node4 [label="Objects.ConsultaMedica",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_objects_1_1_consulta_medica.html",tooltip="Gets all information from triagem, doctor code that saw the patient, diagnosis, medication,..."];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" doctor" ,fontname="Helvetica"];
+  Node5 [label="Objects.Medico",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_objects_1_1_medico.html",tooltip="Doctor class"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" triage" ,fontname="Helvetica"];
+  Node6 [label="Objects.Triagem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_objects_1_1_triagem.html",tooltip="Class of triagem"];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nurse" ,fontname="Helvetica"];
+  Node7 [label="Objects.Enfermeiro",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_objects_1_1_enfermeiro.html",tooltip="Nurse class"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" utente" ,fontname="Helvetica"];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" triage" ,fontname="Helvetica"];
+}

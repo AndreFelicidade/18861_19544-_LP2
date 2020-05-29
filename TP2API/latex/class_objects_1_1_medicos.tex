@@ -1,0 +1,185 @@
+\hypertarget{class_objects_1_1_medicos}{}\doxysection{Objects.\+Medicos Class Reference}
+\label{class_objects_1_1_medicos}\index{Objects.Medicos@{Objects.Medicos}}
+
+
+Class that manages doctor data  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_objects_1_1_medico}{Medico}} \mbox{\hyperlink{class_objects_1_1_medicos_a588ea4a8e165b1f9fabc503e1a6704f4}{Find\+Doctor\+ID}} (int doc\+Cod)
+\begin{DoxyCompactList}\small\item\em find doctor code \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_objects_1_1_medico}{Medico}} \mbox{\hyperlink{class_objects_1_1_medicos_a7e9de3de8a7ab007a6c3f41b4e566d7f}{Find\+Doctor\+By\+Name\+And\+Nhs\+Number}} (int nhs\+Number, string name)
+\begin{DoxyCompactList}\small\item\em find for name and nhsnumber \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_objects_1_1_medico}{Medico}} $>$ \mbox{\hyperlink{class_objects_1_1_medicos_a35d9bcb6447ea36c6632fbaeb278c9d7}{Get\+Avaliable\+Doctors}} ()
+\begin{DoxyCompactList}\small\item\em Gets avaliable doctors \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_objects_1_1_medicos_abca5b619d13930704ec351dd9a7cae33}{Save\+Doctors}} ()
+\begin{DoxyCompactList}\small\item\em Save doctor data to file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_objects_1_1_medicos_a5a1e8b6f11a2d42e55901dcce7dd203d}{Load\+Nurses}} ()
+\begin{DoxyCompactList}\small\item\em Loads doctors from file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_objects_1_1_medico}{Medico}} $>$ \mbox{\hyperlink{class_objects_1_1_medicos_af38c9a520d15089ed97f9f1d1b84580c}{Get\+List}} ()
+\begin{DoxyCompactList}\small\item\em returns list of nurses \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_objects_1_1_medicos_a2f072d38197030f904cb002bf088defc}{Add\+Medico}} (\mbox{\hyperlink{class_objects_1_1_medico}{Medico}} med)
+\begin{DoxyCompactList}\small\item\em Adding a doctor to the list \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_objects_1_1_medicos_a5dafa351c80663aaf371dd4160aa6d38}{Order\+By\+Specialty}} ()
+\begin{DoxyCompactList}\small\item\em Orders \mbox{\hyperlink{class_objects_1_1_medicos}{Medicos}} by specialty \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_objects_1_1_medicos_aa42def1eebeb9f85a06f3c1e2ea3c872}{Edit\+Doctor}} (\mbox{\hyperlink{class_objects_1_1_medico}{Medico}} doc, Date\+Time birth\+Date, int nhs\+Number, string name, string gender, string address, int doc\+Code, string specialty, bool avaliable)
+\begin{DoxyCompactList}\small\item\em Enables editing of a doctors data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_objects_1_1_medico}{Medico}} $>$ \mbox{\hyperlink{class_objects_1_1_medicos_a8c36ed74bb384c0c880364370e1e759b}{medicos}} = new List$<$\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}$>$()
+\begin{DoxyCompactList}\small\item\em Where medicos are stored \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that manages doctor data 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_objects_1_1_medicos_a2f072d38197030f904cb002bf088defc}\label{class_objects_1_1_medicos_a2f072d38197030f904cb002bf088defc}} 
+\index{Objects.Medicos@{Objects.Medicos}!AddMedico@{AddMedico}}
+\index{AddMedico@{AddMedico}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{AddMedico()}{AddMedico()}}
+{\footnotesize\ttfamily static bool Objects.\+Medicos.\+Add\+Medico (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}}]{med }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adding a doctor to the list 
+
+\mbox{\Hypertarget{class_objects_1_1_medicos_aa42def1eebeb9f85a06f3c1e2ea3c872}\label{class_objects_1_1_medicos_aa42def1eebeb9f85a06f3c1e2ea3c872}} 
+\index{Objects.Medicos@{Objects.Medicos}!EditDoctor@{EditDoctor}}
+\index{EditDoctor@{EditDoctor}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{EditDoctor()}{EditDoctor()}}
+{\footnotesize\ttfamily static void Objects.\+Medicos.\+Edit\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}}]{doc,  }\item[{Date\+Time}]{birth\+Date,  }\item[{int}]{nhs\+Number,  }\item[{string}]{name,  }\item[{string}]{gender,  }\item[{string}]{address,  }\item[{int}]{doc\+Code,  }\item[{string}]{specialty,  }\item[{bool}]{avaliable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enables editing of a doctors data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em doc} & \\
+\hline
+{\em birth\+Date} & \\
+\hline
+{\em nhs\+Number} & \\
+\hline
+{\em name} & \\
+\hline
+{\em gender} & \\
+\hline
+{\em address} & \\
+\hline
+{\em doc\+Code} & \\
+\hline
+{\em specialty} & \\
+\hline
+{\em avaliable} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_objects_1_1_medicos_a7e9de3de8a7ab007a6c3f41b4e566d7f}\label{class_objects_1_1_medicos_a7e9de3de8a7ab007a6c3f41b4e566d7f}} 
+\index{Objects.Medicos@{Objects.Medicos}!FindDoctorByNameAndNhsNumber@{FindDoctorByNameAndNhsNumber}}
+\index{FindDoctorByNameAndNhsNumber@{FindDoctorByNameAndNhsNumber}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{FindDoctorByNameAndNhsNumber()}{FindDoctorByNameAndNhsNumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_medico}{Medico}} Objects.\+Medicos.\+Find\+Doctor\+By\+Name\+And\+Nhs\+Number (\begin{DoxyParamCaption}\item[{int}]{nhs\+Number,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+find for name and nhsnumber 
+
+\mbox{\Hypertarget{class_objects_1_1_medicos_a588ea4a8e165b1f9fabc503e1a6704f4}\label{class_objects_1_1_medicos_a588ea4a8e165b1f9fabc503e1a6704f4}} 
+\index{Objects.Medicos@{Objects.Medicos}!FindDoctorID@{FindDoctorID}}
+\index{FindDoctorID@{FindDoctorID}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{FindDoctorID()}{FindDoctorID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_medico}{Medico}} Objects.\+Medicos.\+Find\+Doctor\+ID (\begin{DoxyParamCaption}\item[{int}]{doc\+Cod }\end{DoxyParamCaption})}
+
+
+
+find doctor code 
+
+\mbox{\Hypertarget{class_objects_1_1_medicos_a35d9bcb6447ea36c6632fbaeb278c9d7}\label{class_objects_1_1_medicos_a35d9bcb6447ea36c6632fbaeb278c9d7}} 
+\index{Objects.Medicos@{Objects.Medicos}!GetAvaliableDoctors@{GetAvaliableDoctors}}
+\index{GetAvaliableDoctors@{GetAvaliableDoctors}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{GetAvaliableDoctors()}{GetAvaliableDoctors()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}$>$ Objects.\+Medicos.\+Get\+Avaliable\+Doctors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets avaliable doctors 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_objects_1_1_medicos_af38c9a520d15089ed97f9f1d1b84580c}\label{class_objects_1_1_medicos_af38c9a520d15089ed97f9f1d1b84580c}} 
+\index{Objects.Medicos@{Objects.Medicos}!GetList@{GetList}}
+\index{GetList@{GetList}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{GetList()}{GetList()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}$>$ Objects.\+Medicos.\+Get\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+returns list of nurses 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_objects_1_1_medicos_a5a1e8b6f11a2d42e55901dcce7dd203d}\label{class_objects_1_1_medicos_a5a1e8b6f11a2d42e55901dcce7dd203d}} 
+\index{Objects.Medicos@{Objects.Medicos}!LoadNurses@{LoadNurses}}
+\index{LoadNurses@{LoadNurses}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{LoadNurses()}{LoadNurses()}}
+{\footnotesize\ttfamily bool Objects.\+Medicos.\+Load\+Nurses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads doctors from file 
+
+\mbox{\Hypertarget{class_objects_1_1_medicos_a5dafa351c80663aaf371dd4160aa6d38}\label{class_objects_1_1_medicos_a5dafa351c80663aaf371dd4160aa6d38}} 
+\index{Objects.Medicos@{Objects.Medicos}!OrderBySpecialty@{OrderBySpecialty}}
+\index{OrderBySpecialty@{OrderBySpecialty}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{OrderBySpecialty()}{OrderBySpecialty()}}
+{\footnotesize\ttfamily static bool Objects.\+Medicos.\+Order\+By\+Specialty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Orders \mbox{\hyperlink{class_objects_1_1_medicos}{Medicos}} by specialty 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_objects_1_1_medicos_abca5b619d13930704ec351dd9a7cae33}\label{class_objects_1_1_medicos_abca5b619d13930704ec351dd9a7cae33}} 
+\index{Objects.Medicos@{Objects.Medicos}!SaveDoctors@{SaveDoctors}}
+\index{SaveDoctors@{SaveDoctors}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{SaveDoctors()}{SaveDoctors()}}
+{\footnotesize\ttfamily bool Objects.\+Medicos.\+Save\+Doctors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save doctor data to file 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_objects_1_1_medicos_a8c36ed74bb384c0c880364370e1e759b}\label{class_objects_1_1_medicos_a8c36ed74bb384c0c880364370e1e759b}} 
+\index{Objects.Medicos@{Objects.Medicos}!medicos@{medicos}}
+\index{medicos@{medicos}!Objects.Medicos@{Objects.Medicos}}
+\doxysubsubsection{\texorpdfstring{medicos}{medicos}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}$>$ Objects.\+Medicos.\+medicos = new List$<$\mbox{\hyperlink{class_objects_1_1_medico}{Medico}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Where medicos are stored 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Data Management/Medicos.\+cs\end{DoxyCompactItemize}

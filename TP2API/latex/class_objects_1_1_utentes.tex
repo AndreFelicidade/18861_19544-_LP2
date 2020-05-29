@@ -1,0 +1,167 @@
+\hypertarget{class_objects_1_1_utentes}{}\doxysection{Objects.\+Utentes Class Reference}
+\label{class_objects_1_1_utentes}\index{Objects.Utentes@{Objects.Utentes}}
+
+
+Class that manages \mbox{\hyperlink{class_objects_1_1_utentes}{Utentes}} data  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} \mbox{\hyperlink{class_objects_1_1_utentes_a2ca9d9cdedaacf3429b897f7f104ae23}{Find\+Utente\+ID}} (int patient\+Number)
+\begin{DoxyCompactList}\small\item\em find for Id\+Utente \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} \mbox{\hyperlink{class_objects_1_1_utentes_affd5e7df8b7435bf97abcb4070143e23}{Find\+Utente\+Name}} (int nhs\+Number, string name)
+\begin{DoxyCompactList}\small\item\em find for name and nhsnumber \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} \mbox{\hyperlink{class_objects_1_1_utentes_a6e02fc37783d1fe2b7cc46cab9ba2ac3}{Show\+All\+Utentes}} ()
+\begin{DoxyCompactList}\small\item\em Printing all utentes \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_objects_1_1_utentes_af551d078efa49aa962a35fb67b6fd493}{Save\+Utentes}} ()
+\begin{DoxyCompactList}\small\item\em Save utentes data to file \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_objects_1_1_utentes_a6f0a4b9752412943ce345cc5f846b204}{Load\+Utentes}} ()
+\begin{DoxyCompactList}\small\item\em Loads utentes from file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_objects_1_1_utentes_a4329057c70e657600b8520e1b36470f5}{Add\+Utente}} (\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} utente)
+\begin{DoxyCompactList}\small\item\em Adding an utente to the list \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_objects_1_1_utentes_a36fc6f61d9c796ed57887803941aca29}{Order\+By\+Nhs\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Orders utentes by urgency level \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_objects_1_1_utentes_ae3d0d3aa5eae828b700714ac186fc9ac}{Edit\+Utente}} (\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} u, Date\+Time birth\+Date, int nhs\+Number, string name, string gender, string address, int pat\+Num, \mbox{\hyperlink{class_objects_1_1_processo_clinico}{Processo\+Clinico}} cP, bool active)
+\begin{DoxyCompactList}\small\item\em Allows editing of an utentes data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_objects_1_1_utente}{Utente}} $>$ \mbox{\hyperlink{class_objects_1_1_utentes_a0788b683388180594f57e047ee13d2b0}{utentes}} = new List$<$\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}$>$()
+\begin{DoxyCompactList}\small\item\em Where utentes are stored \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that manages \mbox{\hyperlink{class_objects_1_1_utentes}{Utentes}} data 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_objects_1_1_utentes_a4329057c70e657600b8520e1b36470f5}\label{class_objects_1_1_utentes_a4329057c70e657600b8520e1b36470f5}} 
+\index{Objects.Utentes@{Objects.Utentes}!AddUtente@{AddUtente}}
+\index{AddUtente@{AddUtente}!Objects.Utentes@{Objects.Utentes}}
+\doxysubsubsection{\texorpdfstring{AddUtente()}{AddUtente()}}
+{\footnotesize\ttfamily static bool Objects.\+Utentes.\+Add\+Utente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}}]{utente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adding an utente to the list 
+
+\mbox{\Hypertarget{class_objects_1_1_utentes_ae3d0d3aa5eae828b700714ac186fc9ac}\label{class_objects_1_1_utentes_ae3d0d3aa5eae828b700714ac186fc9ac}} 
+\index{Objects.Utentes@{Objects.Utentes}!EditUtente@{EditUtente}}
+\index{EditUtente@{EditUtente}!Objects.Utentes@{Objects.Utentes}}
+\doxysubsubsection{\texorpdfstring{EditUtente()}{EditUtente()}}
+{\footnotesize\ttfamily static void Objects.\+Utentes.\+Edit\+Utente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}}]{u,  }\item[{Date\+Time}]{birth\+Date,  }\item[{int}]{nhs\+Number,  }\item[{string}]{name,  }\item[{string}]{gender,  }\item[{string}]{address,  }\item[{int}]{pat\+Num,  }\item[{\mbox{\hyperlink{class_objects_1_1_processo_clinico}{Processo\+Clinico}}}]{cP,  }\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Allows editing of an utentes data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+{\em birth\+Date} & \\
+\hline
+{\em nhs\+Number} & \\
+\hline
+{\em name} & \\
+\hline
+{\em gender} & \\
+\hline
+{\em address} & \\
+\hline
+{\em pat\+Num} & \\
+\hline
+{\em cP} & \\
+\hline
+{\em active} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_objects_1_1_utentes_a2ca9d9cdedaacf3429b897f7f104ae23}\label{class_objects_1_1_utentes_a2ca9d9cdedaacf3429b897f7f104ae23}} 
+\index{Objects.Utentes@{Objects.Utentes}!FindUtenteID@{FindUtenteID}}
+\index{FindUtenteID@{FindUtenteID}!Objects.Utentes@{Objects.Utentes}}
+\doxysubsubsection{\texorpdfstring{FindUtenteID()}{FindUtenteID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_utente}{Utente}} Objects.\+Utentes.\+Find\+Utente\+ID (\begin{DoxyParamCaption}\item[{int}]{patient\+Number }\end{DoxyParamCaption})}
+
+
+
+find for Id\+Utente 
+
+\mbox{\Hypertarget{class_objects_1_1_utentes_affd5e7df8b7435bf97abcb4070143e23}\label{class_objects_1_1_utentes_affd5e7df8b7435bf97abcb4070143e23}} 
+\index{Objects.Utentes@{Objects.Utentes}!FindUtenteName@{FindUtenteName}}
+\index{FindUtenteName@{FindUtenteName}!Objects.Utentes@{Objects.Utentes}}
+\doxysubsubsection{\texorpdfstring{FindUtenteName()}{FindUtenteName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_utente}{Utente}} Objects.\+Utentes.\+Find\+Utente\+Name (\begin{DoxyParamCaption}\item[{int}]{nhs\+Number,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+find for name and nhsnumber 
+
+\mbox{\Hypertarget{class_objects_1_1_utentes_a6f0a4b9752412943ce345cc5f846b204}\label{class_objects_1_1_utentes_a6f0a4b9752412943ce345cc5f846b204}} 
+\index{Objects.Utentes@{Objects.Utentes}!LoadUtentes@{LoadUtentes}}
+\index{LoadUtentes@{LoadUtentes}!Objects.Utentes@{Objects.Utentes}}
+\doxysubsubsection{\texorpdfstring{LoadUtentes()}{LoadUtentes()}}
+{\footnotesize\ttfamily bool Objects.\+Utentes.\+Load\+Utentes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads utentes from file 
+
+\mbox{\Hypertarget{class_objects_1_1_utentes_a36fc6f61d9c796ed57887803941aca29}\label{class_objects_1_1_utentes_a36fc6f61d9c796ed57887803941aca29}} 
+\index{Objects.Utentes@{Objects.Utentes}!OrderByNhsNumber@{OrderByNhsNumber}}
+\index{OrderByNhsNumber@{OrderByNhsNumber}!Objects.Utentes@{Objects.Utentes}}
+\doxysubsubsection{\texorpdfstring{OrderByNhsNumber()}{OrderByNhsNumber()}}
+{\footnotesize\ttfamily static bool Objects.\+Utentes.\+Order\+By\+Nhs\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Orders utentes by urgency level 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_objects_1_1_utentes_af551d078efa49aa962a35fb67b6fd493}\label{class_objects_1_1_utentes_af551d078efa49aa962a35fb67b6fd493}} 
+\index{Objects.Utentes@{Objects.Utentes}!SaveUtentes@{SaveUtentes}}
+\index{SaveUtentes@{SaveUtentes}!Objects.Utentes@{Objects.Utentes}}
+\doxysubsubsection{\texorpdfstring{SaveUtentes()}{SaveUtentes()}}
+{\footnotesize\ttfamily bool Objects.\+Utentes.\+Save\+Utentes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Save utentes data to file 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_objects_1_1_utentes_a6e02fc37783d1fe2b7cc46cab9ba2ac3}\label{class_objects_1_1_utentes_a6e02fc37783d1fe2b7cc46cab9ba2ac3}} 
+\index{Objects.Utentes@{Objects.Utentes}!ShowAllUtentes@{ShowAllUtentes}}
+\index{ShowAllUtentes@{ShowAllUtentes}!Objects.Utentes@{Objects.Utentes}}
+\doxysubsubsection{\texorpdfstring{ShowAllUtentes()}{ShowAllUtentes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_utente}{Utente}} Objects.\+Utentes.\+Show\+All\+Utentes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Printing all utentes 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_objects_1_1_utentes_a0788b683388180594f57e047ee13d2b0}\label{class_objects_1_1_utentes_a0788b683388180594f57e047ee13d2b0}} 
+\index{Objects.Utentes@{Objects.Utentes}!utentes@{utentes}}
+\index{utentes@{utentes}!Objects.Utentes@{Objects.Utentes}}
+\doxysubsubsection{\texorpdfstring{utentes}{utentes}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}$>$ Objects.\+Utentes.\+utentes = new List$<$\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Where utentes are stored 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Data Management/Utentes.\+cs\end{DoxyCompactItemize}

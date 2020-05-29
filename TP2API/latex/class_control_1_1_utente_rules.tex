@@ -1,0 +1,126 @@
+\hypertarget{class_control_1_1_utente_rules}{}\doxysection{Control.\+Utente\+Rules Class Reference}
+\label{class_control_1_1_utente_rules}\index{Control.UtenteRules@{Control.UtenteRules}}
+
+
+Class that dictates how the user accesses the data of utentes  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_control_1_1_utente_rules_abe744a3ada626f8e9b6c9a3cb4a3d0e8}{Add\+Utente}} (\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} u)
+\begin{DoxyCompactList}\small\item\em Adds a doctor to the system list after validating it \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_1_1_utente_rules_a25a48b5219d85e7f416588c6b33c02ad}{Validate\+Utente}} (\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} u)
+\begin{DoxyCompactList}\small\item\em Compares a new utente to utentes already registered \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_objects_1_1_utente}{Utente}} $>$ \mbox{\hyperlink{class_control_1_1_utente_rules_a845e3654d80e49d5e073f8bcb81173f9}{See\+Registered\+Utentes}} ()
+\begin{DoxyCompactList}\small\item\em returns list of all utentes \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} \mbox{\hyperlink{class_control_1_1_utente_rules_a716e24da062bf402eaae057946b227f3}{Editing\+Utente}} (\mbox{\hyperlink{class_objects_1_1_utente}{Utente}} u, Date\+Time birth\+Date, int nhs\+Number, string name, string gender, string address, int pat\+Num, \mbox{\hyperlink{class_objects_1_1_processo_clinico}{Processo\+Clinico}} cP, bool active)
+\begin{DoxyCompactList}\small\item\em Enables editing of the information of an utente \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_objects_1_1_utente}{Utente}} $>$ \mbox{\hyperlink{class_control_1_1_utente_rules_a20d0c2b89a19388b351a563be05a7893}{Order\+Utente\+By\+Nhs\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Gets the utente list ordered by the nhs number, readies it to send to the front end layer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that dictates how the user accesses the data of utentes 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_control_1_1_utente_rules_abe744a3ada626f8e9b6c9a3cb4a3d0e8}\label{class_control_1_1_utente_rules_abe744a3ada626f8e9b6c9a3cb4a3d0e8}} 
+\index{Control.UtenteRules@{Control.UtenteRules}!AddUtente@{AddUtente}}
+\index{AddUtente@{AddUtente}!Control.UtenteRules@{Control.UtenteRules}}
+\doxysubsubsection{\texorpdfstring{AddUtente()}{AddUtente()}}
+{\footnotesize\ttfamily int Control.\+Utente\+Rules.\+Add\+Utente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}}]{u }\end{DoxyParamCaption})}
+
+
+
+Adds a doctor to the system list after validating it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em med} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_utente_rules_a716e24da062bf402eaae057946b227f3}\label{class_control_1_1_utente_rules_a716e24da062bf402eaae057946b227f3}} 
+\index{Control.UtenteRules@{Control.UtenteRules}!EditingUtente@{EditingUtente}}
+\index{EditingUtente@{EditingUtente}!Control.UtenteRules@{Control.UtenteRules}}
+\doxysubsubsection{\texorpdfstring{EditingUtente()}{EditingUtente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_objects_1_1_utente}{Utente}} Control.\+Utente\+Rules.\+Editing\+Utente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}}]{u,  }\item[{Date\+Time}]{birth\+Date,  }\item[{int}]{nhs\+Number,  }\item[{string}]{name,  }\item[{string}]{gender,  }\item[{string}]{address,  }\item[{int}]{pat\+Num,  }\item[{\mbox{\hyperlink{class_objects_1_1_processo_clinico}{Processo\+Clinico}}}]{cP,  }\item[{bool}]{active }\end{DoxyParamCaption})}
+
+
+
+Enables editing of the information of an utente 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+{\em birth\+Date} & \\
+\hline
+{\em nhs\+Number} & \\
+\hline
+{\em name} & \\
+\hline
+{\em gender} & \\
+\hline
+{\em address} & \\
+\hline
+{\em pat\+Num} & \\
+\hline
+{\em cP} & \\
+\hline
+{\em active} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_utente_rules_a20d0c2b89a19388b351a563be05a7893}\label{class_control_1_1_utente_rules_a20d0c2b89a19388b351a563be05a7893}} 
+\index{Control.UtenteRules@{Control.UtenteRules}!OrderUtenteByNhsNumber@{OrderUtenteByNhsNumber}}
+\index{OrderUtenteByNhsNumber@{OrderUtenteByNhsNumber}!Control.UtenteRules@{Control.UtenteRules}}
+\doxysubsubsection{\texorpdfstring{OrderUtenteByNhsNumber()}{OrderUtenteByNhsNumber()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}$>$ Control.\+Utente\+Rules.\+Order\+Utente\+By\+Nhs\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the utente list ordered by the nhs number, readies it to send to the front end layer 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_utente_rules_a845e3654d80e49d5e073f8bcb81173f9}\label{class_control_1_1_utente_rules_a845e3654d80e49d5e073f8bcb81173f9}} 
+\index{Control.UtenteRules@{Control.UtenteRules}!SeeRegisteredUtentes@{SeeRegisteredUtentes}}
+\index{SeeRegisteredUtentes@{SeeRegisteredUtentes}!Control.UtenteRules@{Control.UtenteRules}}
+\doxysubsubsection{\texorpdfstring{SeeRegisteredUtentes()}{SeeRegisteredUtentes()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}$>$ Control.\+Utente\+Rules.\+See\+Registered\+Utentes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns list of all utentes 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_control_1_1_utente_rules_a25a48b5219d85e7f416588c6b33c02ad}\label{class_control_1_1_utente_rules_a25a48b5219d85e7f416588c6b33c02ad}} 
+\index{Control.UtenteRules@{Control.UtenteRules}!ValidateUtente@{ValidateUtente}}
+\index{ValidateUtente@{ValidateUtente}!Control.UtenteRules@{Control.UtenteRules}}
+\doxysubsubsection{\texorpdfstring{ValidateUtente()}{ValidateUtente()}}
+{\footnotesize\ttfamily void Control.\+Utente\+Rules.\+Validate\+Utente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_objects_1_1_utente}{Utente}}}]{u }\end{DoxyParamCaption})}
+
+
+
+Compares a new utente to utentes already registered 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Control/Utente\+Rules.\+cs\end{DoxyCompactItemize}
