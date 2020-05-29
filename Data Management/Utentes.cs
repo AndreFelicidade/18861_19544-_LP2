@@ -142,6 +142,17 @@ namespace Objects
             u.patientNumber = patNum;
         }
 
+
+        /// <summary>
+        /// List all clinical processes
+        /// </summary>
+        /// <returns></returns>
+        public List<ProcessoClinico> AllClinicalProcess()
+        {
+            return utentes.Select(utente => utente.clinicalProcess).ToList();
+        }
+
+
         /// <summary>
         /// Save utentes data to file
         /// </summary>
